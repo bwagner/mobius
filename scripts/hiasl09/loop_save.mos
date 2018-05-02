@@ -1,0 +1,30 @@
+# hiasl09
+#
+# Loop Recording
+#
+# My scripts are adapted to my style of playing which is mainly multitrack
+# looping, muting and unmuting of tracks. I use as Nobels MF1 foot controller
+# which can only send program changes so some of the scripts are written to
+# have more than one function on one button.
+# I hope some ideas are useful for other loopers to achieve similar functionality
+# or improve it and hopefully tell me how.
+#
+# My settings are: 
+# Quantize=off, 
+# switch Quant = off, 
+# Mute Mode = start, 
+# Loop copy = off, 
+# track copy = timing.
+# 
+#
+# simple, just for visual feedback.
+#################################
+!LoopSave
+
+if mode != reset
+SaveLoop
+set CustomMode "loop saved"
+wait msecs 555
+set CustomMode
+endif
+#################################

@@ -1,0 +1,107 @@
+# hiasl09
+#
+# Overdub Now
+#
+# My scripts are adapted to my style of playing which is mainly multitrack
+# looping, muting and unmuting of tracks. I use as Nobels MF1 foot controller
+# which can only send program changes so some of the scripts are written to
+# have more than one function on one button.
+# I hope some ideas are useful for other loopers to achieve similar functionality
+# or improve it and hopefully tell me how.
+#
+# My settings are: 
+# Quantize=off, 
+# switch Quant = off, 
+# Mute Mode = start, 
+# Loop copy = off, 
+# track copy = timing.
+# 
+#
+# This Overdub script acts as Overdub (of course), if the track you want to
+# overdub is muted, it retriggers all playing (unmuted) tracks, including the
+# selected, so you can start overdubbing from the beginning.
+#
+# I also use the overdub button to Bounce, because I rarely overdub something
+# while bouncing to a new track.
+#
+# If you are in an empty track (mode = reset) möbius Mode will show you:
+# "bounce?" you now can cancel this with the above reset script or start
+# bouncing with the overdub button, which retriggers all playing tracks at the
+# same time, then it selects the previous track (where one can start to fool
+# around with all sorts of functions) and ends bouncing by another press of the
+# overdub button.
+#################################
+!name OverdubNow
+
+Variable global BounceNow
+Jump Bouncing BounceNow > 0
+
+if mode = reset
+  set BounceNow 1
+  set CustomMode "bounce?"
+endif
+################
+
+set Input 127
+
+Jump dubNow mode = Mute
+
+Variable SaveSwitchQuant = $switchQuant
+set switchQuant off
+Overdub
+set switchQuant $SaveSwitchQuant
+end
+
+Label dubNow
+
+Variable Muted
+Variable saveSwitchQuant
+For all
+ set saveSwitchQuant $switchQuant
+ set switchQuant off
+ set Muted $mode
+ Jump MuteAgain Muted = Mute
+ Retrigger
+ Jump goon
+
+ Label MuteAgain
+ Retrigger
+ Mute
+
+ Label goon
+ set switchQuant $saveSwitchQuant
+next
+
+Overdub
+end
+#################
+Label Bouncing
+
+if BounceNow = 2
+ Bounce
+ set BounceNow 0
+ set CustomMode
+elseif BounceNow = 1
+For all
+ Variable saveSwitchQuant
+ set saveSwitchQuant $switchQuant
+ set switchQuant off
+ Jump MuteAgain2 mode = Mute
+ Retrigger
+ Jump goon2
+
+ Label MuteAgain2
+ Retrigger
+ Mute
+
+ Label goon2
+ set switchQuant $saveSwitchQuant
+next
+ PrevTrack
+ Bounce
+ set BounceNow 2
+ set CustomMode bouncing
+endif
+
+end
+#################################

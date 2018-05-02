@@ -1,0 +1,14 @@
+# kris_hartung
+#
+# FadeIn-Out
+!name FadeIn-Out
+ 
+if output = 127
+   Call "fadeOut"
+ 
+else if output = 0
+   Call "fadeIn"
+ 
+endif
+
+end

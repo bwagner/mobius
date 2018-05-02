@@ -1,0 +1,20 @@
+# fourstringri0t
+#
+# Emulation of the Line 6 DL4 Record/Overdub button
+
+!name Redub
+
+if mode == reset
+Record
+end
+endif
+
+if mode == mute
+Reset
+Record
+end
+endif
+
+if mode != reset
+Overdub
+endif

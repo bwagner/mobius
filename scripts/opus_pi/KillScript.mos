@@ -1,0 +1,9 @@
+# opus_pi
+#
+# Kill Script
+#
+!name Kill Script
+
+Variable global varKillScript
+set varKillScript 1
+end

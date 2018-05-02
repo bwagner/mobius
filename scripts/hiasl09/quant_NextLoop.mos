@@ -1,0 +1,123 @@
+# hiasl09
+#
+# Quant Next Loop
+#
+# My scripts are adapted to my style of playing which is mainly multitrack
+# looping, muting and unmuting of tracks. I use as Nobels MF1 foot controller
+# which can only send program changes so some of the scripts are written to
+# have more than one function on one button.
+# I hope some ideas are useful for other loopers to achieve similar functionality
+# or improve it and hopefully tell me how.
+#
+# My settings are: 
+# Quantize=off, 
+# switch Quant = off, 
+# Mute Mode = start, 
+# Loop copy = off, 
+# track copy = timing.
+# 
+#
+# I tried to cover a lot of Next Loop appearances by the use of two buttons.
+#
+# quantized
+#
+# the first button (script) does a quantized Next Loop. There is a double click
+# behaviour: if you double click the button the timing will be copied to the
+# next loop, otherwise not. If the track is in reset mode, this button resets
+# all loops in the current track. Once resetted the button will change the loop
+# Count (moreLoops) parameter (see remarks in script). Therefore it's good to
+# have it displayed.
+# (General reset will only work if "set changeMax 0" is executed before, so I
+# have put this line also in other scripts, like record, reset, unqu. nextLoop
+# etc.)
+#
+# there is an additional function: If you schedule a quantized NextLoop and go
+# to another track and do a unquantized NextLoop (see script below) it will
+# follow this command to do an unquantized next loop immediately.
+#################################
+!name QuantNextLoop
+
+Jump Reset_LCount mode = Reset
+
+Variable track SaveCopyMode
+set SaveCopyMode $loopCopy
+Variable track SaveSwitchQuant
+set SaveSwitchQuant $switchQuant
+Variable track switching
+Variable track CopyTiming
+Variable track changeMax
+
+set switching on
+set switchQuant loop
+
+if CopyTiming = yes
+    set switchQuant $SaveSwitchQuant
+    set LoopCopy timing
+else
+
+    NextLoop
+    set changeMax 0
+    set switchQuant $SaveSwitchQuant
+    set CopyTiming yes
+    set CustomMode
+endif
+
+wait msecs 234                                      #double click time
+set CopyTiming no
+set CustomMode
+
+Wait start
+set loopCopy $SaveCopyMode
+set switching off
+
+end
+#################
+Label Reset_LCount
+
+Variable track changeMax
+if changeMax = 1
+    For all
+    Variable maxloops
+    set maxloops 3                # set number to maximum Number of Loops you want to use
+                                  # (not higher than in the preset dialog!)
+
+    if moreLoops = maxloops
+        set moreLoops 2
+    elseif moreLoops = 2
+        set moreLoops 3
+    elseif moreLoops = 3
+        set moreLoops 4
+    elseif moreLoops = 4
+        set moreLoops 5
+    elseif moreLoops = 5
+        set moreLoops 6
+    elseif moreLoops = 6
+        set moreLoops 7
+    elseif moreLoops = 7
+        set moreLoops 8
+    elseif moreLoops = 8
+        set moreLoops 2
+    endif
+    next
+else
+
+GeneralReset
+
+set feedback 127
+set output 127
+set pan 64
+set group 0
+PitchShift 0
+RateShift 0
+
+set customMode "Track Reset"
+Wait msecs 333
+set customMode
+
+
+set changeMax 1
+endif
+
+end
+#################################
+

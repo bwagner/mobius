@@ -1,0 +1,35 @@
+# Buzap, 27Sep2009, 1.38
+#
+# Performs quantized Reset (to Cycle), then searches for any existing previous
+# loop and plays it. If there is no loop in the track, goes back to loop1 doing
+# nothing.
+
+!name QRESET
+
+variable simpleCounter moreLoops - 1
+
+
+## quantized reset
+
+Wait cycle
+Reset
+
+
+## find and play existing previous loop
+
+while simpleCounter > 0
+	PrevLoop
+	Wait last
+	if mode != reset
+		end
+	endif
+	set simpleCounter simpleCounter - 1
+next
+
+
+## if no loop there, go back to loop1, do nothing
+
+Loop 1
+		
+
+#### end QRESET

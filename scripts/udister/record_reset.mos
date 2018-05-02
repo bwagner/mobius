@@ -1,0 +1,12 @@
+# udister
+#
+# Rec/Reset
+!name Rec/Reset
+
+
+if mode = record
+Record
+else
+Reset
+Record
+endif

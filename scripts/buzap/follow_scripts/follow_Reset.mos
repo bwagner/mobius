@@ -1,0 +1,61 @@
+# Buzap, 25Sep2009, 1.38
+#
+# FRESET
+#
+!name FRESET
+
+# Reset with additional parameters for Follow feature
+
+#### Global Variables for Follow function ####
+Variable global followMaster1Track2 0
+Variable global followMaster2Track2 0
+Variable global followMaster3Track2 0
+Variable global followMaster4Track2 0
+Variable global followMaster5Track2 0
+####
+
+if track == 1
+	## reset follow parameter for current master loop
+	if loopNumber == 1
+		set followMaster1Track2 0
+	else
+		if loopNumber == 2
+			set followMaster2Track2 0
+		else
+			if loopNumber == 3
+				set followMaster3Track2 0
+			else
+				if loopNumber == 4
+					set followMaster4Track2 0
+				else
+					if loopNumber == 5
+						set followMaster5Track2 0
+					endif
+				endif
+			endif
+		endif
+	endif
+else
+	if track == 2
+		## reset all follow parameters where track2 current loop is used
+		if followMaster1Track2 == loopNumber
+			set followMaster1Track2 0
+		endif
+		if followMaster2Track2 == loopNumber
+			set followMaster2Track2 0
+		endif
+		if followMaster3Track2 == loopNumber
+			set followMaster3Track2 0
+		endif
+		if followMaster4Track2 == loopNumber
+			set followMaster4Track2 0
+		endif
+		if followMaster5Track2 == loopNumber
+			set followMaster5Track2 0
+		endif
+	endif
+endif
+
+Reset	
+
+#### END FRESET

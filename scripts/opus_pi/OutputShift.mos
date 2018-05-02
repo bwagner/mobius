@@ -1,0 +1,272 @@
+# opus_pi
+#
+# Output Shift Forever
+#
+!name Output Shift Forever
+
+variable saveOutput output
+
+Variable global varKillScript
+set varKillScript 0
+
+Label doItAgain
+if varKillScript = 1
+Jump scriptEnd
+endif
+set output 32
+Wait subcycles 1
+if varKillScript = 1
+Jump scriptEnd
+endif
+set output 0
+Wait subcycles 1
+if varKillScript = 1
+Jump scriptEnd
+endif
+set output 96
+Wait subcycles 1
+if varKillScript = 1
+Jump scriptEnd
+endif
+set output 64
+Wait subcycles 1
+if varKillScript = 1
+Jump scriptEnd
+endif
+set output 127
+Wait subcycles 1
+if varKillScript = 1
+Jump scriptEnd
+endif
+set output 32
+Wait subcycles 1
+if varKillScript = 1
+Jump scriptEnd
+endif
+set output 96
+Wait subcycles 1
+if varKillScript = 1
+Jump scriptEnd
+endif
+set output 0
+Wait subcycles 1
+if varKillScript = 1
+Jump scriptEnd
+endif
+set output 127
+Wait subcycles 1
+if varKillScript = 1
+Jump scriptEnd
+endif
+set output 64
+Wait subcycles 1
+if varKillScript = 1
+Jump scriptEnd
+endif
+set output 96
+Wait subcycles 1
+if varKillScript = 1
+Jump scriptEnd
+endif
+set output 32
+Wait subcycles 1
+if varKillScript = 1
+Jump scriptEnd
+endif
+set output 127
+Wait subcycles 1
+if varKillScript = 1
+Jump scriptEnd
+endif
+set output 0
+Wait subcycles 1
+if varKillScript = 1
+Jump scriptEnd
+endif
+set output 64
+Wait subcycles 1
+if varKillScript = 1
+Jump scriptEnd
+endif
+set output 96
+Wait subcycles 1
+if varKillScript = 1
+Jump scriptEnd
+endif
+set output 127
+Wait subcycles 1
+if varKillScript = 1
+Jump scriptEnd
+endif
+set output 32
+Wait subcycles 1
+if varKillScript = 1
+Jump scriptEnd
+endif
+set output 64
+Wait subcycles 1
+if varKillScript = 1
+Jump scriptEnd
+endif
+set output 0
+Wait subcycles 1
+if varKillScript = 1
+Jump scriptEnd
+endif
+set output 127
+Wait subcycles 1
+if varKillScript = 1
+Jump scriptEnd
+endif
+set output 96
+Wait subcycles 1
+if varKillScript = 1
+Jump scriptEnd
+endif
+set output 64
+Wait subcycles 1
+if varKillScript = 1
+Jump scriptEnd
+endif
+set output 32
+Wait subcycles 1
+if varKillScript = 1
+Jump scriptEnd
+endif
+set output 0
+Wait subcycles 1
+if varKillScript = 1
+Jump scriptEnd
+endif
+set output 127
+Wait subcycles 1
+if varKillScript = 1
+Jump scriptEnd
+endif
+set output 64
+Wait subcycles 1
+if varKillScript = 1
+Jump scriptEnd
+endif
+set output 96
+Wait subcycles 1
+if varKillScript = 1
+Jump scriptEnd
+endif
+set output 0
+Wait subcycles 1
+if varKillScript = 1
+Jump scriptEnd
+endif
+set output 32
+Wait subcycles 1
+if varKillScript = 1
+Jump scriptEnd
+endif
+set output 64
+Wait subcycles 1
+if varKillScript = 1
+Jump scriptEnd
+endif
+set output 127
+Wait subcycles 1
+if varKillScript = 1
+Jump scriptEnd
+endif
+set output 0
+Wait subcycles 1
+if varKillScript = 1
+Jump scriptEnd
+endif
+set output 96
+Wait subcycles 1
+if varKillScript = 1
+Jump scriptEnd
+endif
+set output 32
+Wait subcycles 1
+if varKillScript = 1
+Jump scriptEnd
+endif
+set output 64
+Wait subcycles 1
+if varKillScript = 1
+Jump scriptEnd
+endif
+set output 0
+Wait subcycles 1
+if varKillScript = 1
+Jump scriptEnd
+endif
+set output 127
+Wait subcycles 1
+if varKillScript = 1
+Jump scriptEnd
+endif
+set output 32
+Wait subcycles 1
+if varKillScript = 1
+Jump scriptEnd
+endif
+set output 64
+Wait subcycles 1
+if varKillScript = 1
+Jump scriptEnd
+endif
+set output 0
+Wait subcycles 1
+if varKillScript = 1
+Jump scriptEnd
+endif
+set output 64
+Wait subcycles 1
+if varKillScript = 1
+Jump scriptEnd
+endif
+set output 32
+Wait subcycles 1
+if varKillScript = 1
+Jump scriptEnd
+endif
+set output 127
+Wait subcycles 1
+if varKillScript = 1
+Jump scriptEnd
+endif
+set output 96
+Wait subcycles 1
+if varKillScript = 1
+Jump scriptEnd
+endif
+set output 0
+Wait subcycles 1
+if varKillScript = 1
+Jump scriptEnd
+endif
+set output 32
+Wait subcycles 1
+if varKillScript = 1
+Jump scriptEnd
+endif
+set output 64
+Wait subcycles 1
+if varKillScript = 1
+Jump scriptEnd
+endif
+set output 96
+Wait subcycles 1
+if varKillScript = 1
+Jump scriptEnd
+endif
+set output 127
+Wait subcycles 1
+if varKillScript = 1
+Jump scriptEnd
+endif
+Jump doItAgain
+next
+
+Label scriptEnd
+set output saveOutput
+endif
+end

@@ -1,0 +1,90 @@
+# Buzap, 03Nov2009, 1.38
+#
+# LUILOOP2
+#
+!name LUILOOP2
+
+# Loop pedal will act as Rec/Play/Overdub on Track 1
+# Switching between loops in NextLoop style
+# Double-click will Multiply
+# Long-press will Reset
+
+## adjust double-click time in milliseconds here
+!multiclick 400
+
+## adjust long-press time in milliseconds here
+!sustain 2000
+
+
+## switch to track 1
+## if coded otherwise behaves Rec>Overdub instead of Rec>Play
+
+if track != 1
+	Track 1
+endif
+
+
+
+	if loopNumber == 2
+	
+	## same loop
+	
+		if 	mode == reset
+				Record
+		else
+			if mode == mute
+				Reset
+				Record
+			else
+				if mode == play
+					Overdub
+				else
+					if mode == multiply
+						Play
+					else	
+						if mode != reset
+							Play
+						endif
+					endif
+				endif
+			endif
+		endif
+		
+	else 
+	
+	## other loop
+		
+		## if previous loop was empty, 
+		## trigger new loop with loopCopy=off, autoRecord=on
+		
+		if mode == reset
+			Variable saveLoopCopy loopCopy
+			Variable saveAutoRecord autoRecord
+			set loopCopy off
+			set autoRecord on
+			Loop 2
+			## waits until previous command is finished
+			Wait last
+			set loopCopy saveLoopCopy
+			set autoRecord saveAutoRecord
+		else
+			Loop 2
+		endif
+		
+	endif
+	
+end
+##
+
+## double click will Multiply
+Label click
+Multiply
+end
+
+## long press will Reset
+Label sustain
+Reset
+end
+
+#### END LUILOOP2
+

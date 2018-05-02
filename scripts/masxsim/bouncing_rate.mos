@@ -1,0 +1,820 @@
+# masxsim
+# 
+# Bouncing Rate 
+# 
+!name Bouncing Rate
+variable track xBounceRate
+variable track BounceTime
+set quantize off
+if xBounceRate = 0
+Jump endBounceRate
+else
+set xBounceRate 0
+set BounceTime 1
+endif
+wait msecs 100
+if xBounceRate = 1
+Jump startBounce
+else 
+set BounceTime 2
+endif
+wait msecs 100
+if xBounceRate = 1
+Jump startBounce
+else 
+set BounceTime 3
+endif
+wait msecs 100
+if xBounceRate = 1
+Jump startBounce
+else 
+set BounceTime 4
+endif
+wait msecs 100
+if xBounceRate = 1
+Jump startBounce
+else 
+set BounceTime 5
+endif
+wait msecs 100
+if xBounceRate = 1
+Jump startBounce
+else 
+set BounceTime 6
+endif
+wait msecs 100
+if xBounceRate = 1
+Jump startBounce
+else 
+set BounceTime 7
+endif
+wait msecs 100
+if xBounceRate = 1
+Jump startBounce
+else 
+set BounceTime 8
+endif
+wait msecs 100
+if xBounceRate = 1
+Jump startBounce
+else 
+set BounceTime 9
+endif
+wait msecs 100
+if xBounceRate = 1
+Jump startBounce
+else 
+set BounceTime 10
+endif
+wait msecs 100
+if xBounceRate = 1
+Jump startBounce
+else 
+set BounceTime 11
+endif
+wait msecs 100
+if xBounceRate = 1
+Jump startBounce
+else 
+set BounceTime 12
+endif
+wait msecs 100
+if xBounceRate = 1
+Jump startBounce
+else 
+set BounceTime 13
+endif
+wait msecs 100
+if xBounceRate = 1
+Jump startBounce
+else 
+set BounceTime 14
+endif
+wait msecs 100
+if xBounceRate = 1
+Jump startBounce
+else 
+set BounceTime 15
+endif
+wait msecs 100
+if xBounceRate = 1
+Jump startBounce
+else 
+set BounceTime 16
+endif
+wait msecs 100
+if xBounceRate = 1
+Jump startBounce
+else 
+set BounceTime 17
+endif
+wait msecs 100
+if xBounceRate = 1
+Jump startBounce
+else 
+set BounceTime 18
+endif
+wait msecs 100
+if xBounceRate = 1
+Jump startBounce
+else 
+set BounceTime 19
+endif
+wait msecs 100
+if xBounceRate = 1
+Jump startBounce
+else 
+set BounceTime 20
+endif
+wait msecs 100
+if xBounceRate = 1
+Jump startBounce
+else 
+set BounceTime 21
+endif
+wait msecs 100
+if xBounceRate = 1
+Jump startBounce
+else 
+set BounceTime 22
+endif
+wait msecs 100
+if xBounceRate = 1
+Jump startBounce
+else 
+set BounceTime 23
+endif
+wait msecs 100
+if xBounceRate = 1
+Jump startBounce
+else 
+set BounceTime 24
+endif
+wait msecs 100
+if xBounceRate = 1
+Jump startBounce
+else 
+set BounceTime 25
+endif
+wait msecs 100
+if xBounceRate = 1
+Jump startBounce
+else 
+set BounceTime 26
+endif
+wait msecs 100
+if xBounceRate = 1
+Jump startBounce
+else 
+set BounceTime 27
+endif
+wait msecs 100
+if xBounceRate = 1
+Jump startBounce
+else 
+set BounceTime 28
+endif
+wait msecs 100
+if xBounceRate = 1
+Jump startBounce
+else 
+set BounceTime 29
+endif
+wait msecs 100
+if xBounceRate = 1
+Jump startBounce
+else 
+set BounceTime 30
+endif
+wait msecs 100
+if xBounceRate = 1
+Jump startBounce
+else 
+set BounceTime 31
+endif
+wait msecs 100
+if xBounceRate = 1
+Jump startBounce
+else 
+set BounceTime 32
+endif
+wait msecs 100
+if xBounceRate = 1
+Jump startBounce
+else 
+set BounceTime 33
+endif
+wait msecs 100
+if xBounceRate = 1
+Jump startBounce
+else 
+set BounceTime 34
+endif
+wait msecs 100
+if xBounceRate = 1
+Jump startBounce
+else 
+set BounceTime 35
+endif
+wait msecs 100
+if xBounceRate = 1
+Jump startBounce
+else 
+set BounceTime 36
+endif
+wait msecs 100
+if xBounceRate = 1
+Jump startBounce
+else 
+set BounceTime 37
+endif
+wait msecs 100
+if xBounceRate = 1
+Jump startBounce
+else 
+set BounceTime 38
+endif
+wait msecs 100
+if xBounceRate = 1
+Jump startBounce
+else 
+set BounceTime 39
+endif
+wait msecs 100
+if xBounceRate = 1
+Jump startBounce
+else 
+set BounceTime 40
+endif
+wait msecs 100
+if xBounceRate = 1
+Jump startBounce
+else 
+set BounceTime 41
+endif
+wait msecs 100
+if xBounceRate = 1
+Jump startBounce
+else 
+set BounceTime 42
+endif
+wait msecs 100
+if xBounceRate = 1
+Jump startBounce
+else 
+set BounceTime 43
+endif
+wait msecs 100
+if xBounceRate = 1
+Jump startBounce
+else 
+set BounceTime 44
+endif
+wait msecs 100
+if xBounceRate = 1
+Jump startBounce
+else 
+set BounceTime 45
+endif
+wait msecs 100
+if xBounceRate = 1
+Jump startBounce
+else 
+set BounceTime 46
+endif
+wait msecs 100
+if xBounceRate = 1
+Jump startBounce
+else 
+set BounceTime 47
+endif
+wait msecs 100
+if xBounceRate = 1
+Jump startBounce
+else 
+set BounceTime 48
+endif
+wait msecs 100
+if xBounceRate = 1
+Jump startBounce
+else 
+set BounceTime 49
+endif
+wait msecs 100
+if xBounceRate = 1
+Jump startBounce
+else 
+set BounceTime 50
+endif
+wait msecs 100
+if xBounceRate = 1
+Jump startBounce
+else 
+set BounceTime 51
+endif
+wait msecs 100
+if xBounceRate = 1
+Jump startBounce
+else 
+set BounceTime 52
+endif
+wait msecs 100
+if xBounceRate = 1
+Jump startBounce
+else 
+set BounceTime 53
+endif
+wait msecs 100
+if xBounceRate = 1
+Jump startBounce
+else 
+set BounceTime 54
+endif
+wait msecs 100
+if xBounceRate = 1
+Jump startBounce
+else 
+set BounceTime 55
+endif
+wait msecs 100
+if xBounceRate = 1
+Jump startBounce
+else 
+set BounceTime 56
+endif
+wait msecs 100
+if xBounceRate = 1
+Jump startBounce
+else 
+set BounceTime 57
+endif
+wait msecs 100
+if xBounceRate = 1
+Jump startBounce
+else 
+set BounceTime 58
+endif
+wait msecs 100
+if xBounceRate = 1
+Jump startBounce
+else 
+set BounceTime 59
+endif
+wait msecs 100
+if xBounceRate = 1
+Jump startBounce
+else 
+set BounceTime 60
+endif
+wait msecs 100
+if xBounceRate = 1
+Jump startBounce
+else 
+set BounceTime 61
+endif
+wait msecs 100
+if xBounceRate = 1
+Jump startBounce
+else 
+set BounceTime 62
+endif
+wait msecs 100
+if xBounceRate = 1
+Jump startBounce
+else 
+set BounceTime 63
+endif
+wait msecs 100
+if xBounceRate = 1
+Jump startBounce
+else 
+set BounceTime 64
+endif
+wait msecs 100
+if xBounceRate = 1
+Jump startBounce
+else 
+set BounceTime 65
+endif
+wait msecs 100
+if xBounceRate = 1
+Jump startBounce
+else 
+set BounceTime 66
+endif
+wait msecs 100
+if xBounceRate = 1
+Jump startBounce
+else 
+set BounceTime 67
+endif
+wait msecs 100
+if xBounceRate = 1
+Jump startBounce
+else 
+set BounceTime 68
+endif
+wait msecs 100
+if xBounceRate = 1
+Jump startBounce
+else 
+set BounceTime 69
+endif
+wait msecs 100
+if xBounceRate = 1
+Jump startBounce
+else 
+set BounceTime 70
+endif
+wait msecs 100
+if xBounceRate = 1
+Jump startBounce
+else 
+set BounceTime 71
+endif
+wait msecs 100
+if xBounceRate = 1
+Jump startBounce
+else 
+set BounceTime 72
+endif
+wait msecs 100
+if xBounceRate = 1
+Jump startBounce
+else 
+set BounceTime 73
+endif
+wait msecs 100
+if xBounceRate = 1
+Jump startBounce
+else 
+set BounceTime 74
+endif
+wait msecs 100
+if xBounceRate = 1
+Jump startBounce
+else 
+set BounceTime 75
+endif
+wait msecs 100
+if xBounceRate = 1
+Jump startBounce
+else 
+set BounceTime 76
+endif
+wait msecs 100
+if xBounceRate = 1
+Jump startBounce
+else 
+set BounceTime 77
+endif
+wait msecs 100
+if xBounceRate = 1
+Jump startBounce
+else 
+set BounceTime 78
+endif
+wait msecs 100
+if xBounceRate = 1
+Jump startBounce
+else 
+set BounceTime 79
+endif
+wait msecs 100
+if xBounceRate = 1
+Jump startBounce
+else 
+set BounceTime 80
+endif
+wait msecs 100
+if xBounceRate = 1
+Jump startBounce
+else 
+set BounceTime 81
+endif
+wait msecs 100
+if xBounceRate = 1
+Jump startBounce
+else 
+set BounceTime 82
+endif
+wait msecs 100
+if xBounceRate = 1
+Jump startBounce
+else 
+set BounceTime 83
+endif
+wait msecs 100
+if xBounceRate = 1
+Jump startBounce
+else 
+set BounceTime 84
+endif
+wait msecs 100
+if xBounceRate = 1
+Jump startBounce
+else 
+set BounceTime 85
+endif
+wait msecs 100
+if xBounceRate = 1
+Jump startBounce
+else 
+set BounceTime 86
+endif
+wait msecs 100
+if xBounceRate = 1
+Jump startBounce
+else 
+set BounceTime 87
+endif
+wait msecs 100
+if xBounceRate = 1
+Jump startBounce
+else 
+set BounceTime 88
+endif
+wait msecs 100
+if xBounceRate = 1
+Jump startBounce
+else 
+set BounceTime 89
+endif
+wait msecs 100
+if xBounceRate = 1
+Jump startBounce
+else 
+set BounceTime 90
+endif
+wait msecs 100
+if xBounceRate = 1
+Jump startBounce
+else 
+set BounceTime 91
+endif
+wait msecs 100
+if xBounceRate = 1
+Jump startBounce
+else 
+set BounceTime 92
+endif
+wait msecs 100
+if xBounceRate = 1
+Jump startBounce
+else 
+set BounceTime 93
+endif
+wait msecs 100
+if xBounceRate = 1
+Jump 
+startBounce
+else 
+set BounceTime 93
+endif
+wait msecs 100
+if xBounceRate = 1
+Jump startBounce
+else 
+set BounceTime 94
+endif
+wait msecs 100
+if xBounceRate = 1
+Jump startBounce
+else 
+set BounceTime 95
+endif
+wait msecs 100
+if xBounceRate = 1
+Jump startBounce
+else 
+set BounceTime 96
+endif
+wait msecs 100
+if xBounceRate = 1
+Jump startBounce
+else 
+set BounceTime 97
+endif
+wait msecs 100
+if xBounceRate = 1
+Jump startBounce
+else 
+set BounceTime 98
+endif
+wait msecs 100
+if xBounceRate = 1
+Jump startBounce
+else 
+set BounceTime 99
+endif
+wait msecs 100
+if xBounceRate = 1
+Jump startBounce
+else 
+set BounceTime 100
+endif
+Label startBounce
+set xBounceRate 0
+RateShift -1
+wait msecs BounceTime
+RateShift -2
+wait msecs BounceTime
+RateShift -3
+wait msecs BounceTime
+RateShift -4
+wait msecs BounceTime
+RateShift -5
+wait msecs BounceTime
+RateShift -6
+wait msecs BounceTime
+RateShift -7
+wait msecs BounceTime
+RateShift -8
+wait msecs BounceTime
+RateShift -9
+wait msecs BounceTime
+RateShift -10
+wait msecs BounceTime
+RateShift -11
+wait msecs BounceTime
+RateShift -12
+wait msecs BounceTime
+RateShift -13
+wait msecs BounceTime
+RateShift -14
+wait msecs BounceTime
+RateShift -15
+wait msecs BounceTime
+RateShift -16
+wait msecs BounceTime
+RateShift -17
+wait msecs BounceTime
+RateShift -18
+wait msecs BounceTime
+RateShift -19
+wait msecs BounceTime
+RateShift -20
+wait msecs BounceTime
+RateShift -21
+wait msecs BounceTime
+RateShift -22
+wait msecs BounceTime
+RateShift -23
+wait msecs BounceTime
+RateShift -24
+wait msecs BounceTime
+RateShift -23
+wait msecs BounceTime
+RateShift -22
+wait msecs BounceTime
+RateShift -21
+wait msecs BounceTime
+RateShift -20
+wait msecs BounceTime
+RateShift -19
+wait msecs BounceTime
+RateShift -18
+wait msecs BounceTime
+RateShift -17
+wait msecs BounceTime
+RateShift -16
+wait msecs BounceTime
+RateShift -15
+wait msecs BounceTime
+RateShift -14
+wait msecs BounceTime
+RateShift -13
+wait msecs BounceTime
+RateShift -12
+wait msecs BounceTime
+RateShift -11
+wait msecs BounceTime
+RateShift -10
+wait msecs BounceTime
+RateShift -9
+wait msecs BounceTime
+RateShift -8
+wait msecs BounceTime
+RateShift -7
+wait msecs BounceTime
+RateShift -6
+wait msecs BounceTime
+RateShift -5
+wait msecs BounceTime
+RateShift -4
+wait msecs BounceTime
+RateShift -3
+wait msecs BounceTime
+RateShift -2
+wait msecs BounceTime
+RateShift -1
+wait msecs BounceTime
+RateShift 0
+wait msecs BounceTime
+endif
+if xBounceRate = 1
+Jump endBounceRate
+else
+RateShift 1
+wait msecs BounceTime
+RateShift 2
+wait msecs BounceTime
+RateShift 3
+wait msecs BounceTime
+RateShift 4
+wait msecs BounceTime
+RateShift 5
+wait msecs BounceTime
+RateShift 6
+wait msecs BounceTime
+RateShift 7
+wait msecs BounceTime
+RateShift 8
+wait msecs BounceTime
+RateShift 9
+wait msecs BounceTime
+RateShift 10
+wait msecs BounceTime
+RateShift 11
+wait msecs BounceTime
+RateShift 12
+wait msecs BounceTime
+RateShift 13
+wait msecs BounceTime
+RateShift 14
+wait msecs BounceTime
+RateShift 15
+wait msecs BounceTime
+RateShift 16
+wait msecs BounceTime
+RateShift 17
+wait msecs BounceTime
+RateShift 18
+wait msecs BounceTime
+RateShift 19
+wait msecs BounceTime
+RateShift 20
+wait msecs BounceTime
+RateShift 21
+wait msecs BounceTime
+RateShift 22
+wait msecs BounceTime
+RateShift 23
+wait msecs BounceTime
+RateShift 24
+wait msecs BounceTime
+RateShift 23
+wait msecs BounceTime
+RateShift 22
+wait msecs BounceTime
+RateShift 21
+wait msecs BounceTime
+RateShift 20
+wait msecs BounceTime
+RateShift 19
+wait msecs BounceTime
+RateShift 18
+wait msecs BounceTime
+RateShift 17
+wait msecs BounceTime
+RateShift 16
+wait msecs BounceTime
+RateShift 15
+wait msecs BounceTime
+RateShift 14
+wait msecs BounceTime
+RateShift 13
+wait msecs BounceTime
+RateShift 12
+wait msecs BounceTime
+RateShift 11
+wait msecs BounceTime
+RateShift 10
+wait msecs BounceTime
+RateShift 9
+wait msecs BounceTime
+RateShift 8
+wait msecs BounceTime
+RateShift 7
+wait msecs BounceTime
+RateShift 6
+wait msecs BounceTime
+RateShift 5
+wait msecs BounceTime
+RateShift 4
+wait msecs BounceTime
+RateShift 3
+wait msecs BounceTime
+RateShift 2
+wait msecs BounceTime
+RateShift 1
+wait msecs BounceTime
+RateShift 0
+wait msecs BounceTime
+if xBounceRate = 1
+Jump endBounceRate
+else
+Jump startBounce
+endif
+Label endBounceRate
+set xBounceRate 1

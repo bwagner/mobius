@@ -1,0 +1,76 @@
+# hiasl09
+#
+# Double Reset
+#
+# My scripts are adapted to my style of playing which is mainly multitrack
+# looping, muting and unmuting of tracks. I use as Nobels MF1 foot controller
+# which can only send program changes so some of the scripts are written to
+# have more than one function on one button.
+# I hope some ideas are useful for other loopers to achieve similar functionality
+# or improve it and hopefully tell me how.
+#
+# My settings are: 
+# Quantize=off, 
+# switch Quant = off, 
+# Mute Mode = start, 
+# Loop copy = off, 
+# track copy = timing.
+# 
+#
+# I use Reset (loop) General reset (all loops in track) and Global Reset (for
+# all loops in all tracks).
+# The reset script also resets the trackcontrols. It also cancels bouncing (not
+# really, see: Overdub, Bounce)
+# If you bind this to a key or a button a single-click resets the loop (and
+# volume, feedback, rate etc.) a double click resets all loops and selects
+# track 1. very handy! 
+#################################
+!DoubleReset
+
+Variable global resetAll
+
+if resetAll = 1
+    For all
+    GeneralReset
+    Next
+
+    For all
+    set feedback 127  #deactivate by # in the beginning of the line or remove line if you don't use this
+    set output 127
+    set pan 64
+    set group 0
+    PitchShift 0
+    RateShift 0
+    Next
+
+    Variable global BounceNow
+    set BounceNow 0
+    set CustomMode
+
+    TrackSelect1      #selects track one after double click
+    set resetAll 0
+
+else
+
+    Reset
+    set feedback 127
+    set output 127
+    set pan 64
+    set group 0
+
+    Variable global BounceNow
+    set BounceNow 0
+    set CustomMode
+
+    PitchShift 0
+    RateShift 0
+
+    set resetAll 1
+    set CustomMode "Global Reset?"
+    wait msecs 250  #adjust double click speed here
+    set resetAll 0
+    set CustomMode
+
+endif
+#################################
+

@@ -1,0 +1,775 @@
+# jayvanrumste
+#
+# Testscript for fading in or out from variable output level
+#
+!name Cyclic Variable Start Fades
+if output = 0
+wait cycle
+set output 1
+else
+if output = 1
+wait cycle
+set output 2
+else 
+if output = 2
+wait cycle
+set output 3
+else
+if output = 3
+wait cycle
+set output 4
+else
+if output = 4
+wait cycle
+set output 5
+else
+if output = 5
+wait cycle
+set output 6
+else
+if output = 6
+wait cycle
+set output 7
+else
+if output = 7
+wait cycle
+set output 8
+else
+if output = 8
+wait cycle
+set output 9
+else
+if output = 9
+wait cycle
+set output 10
+else
+if output = 10
+wait cycle
+set output 11
+else
+if output = 11
+wait cycle
+set output 12
+else
+if output = 12
+wait cycle
+set output 13
+else
+if output = 13
+wait cycle
+set output 14
+else
+if output = 14
+wait cycle
+set output 15
+else
+if output = 15
+wait cycle
+set output 16
+else
+if output = 16
+wait cycle
+set output 17
+else
+if output = 17
+wait cycle
+set output 18
+else
+if output = 18
+wait cycle
+set output 19
+else
+if output = 19
+wait cycle
+set output 20
+else
+if output = 20
+wait cycle
+set output 21
+else
+if output = 21
+wait cycle
+set output 22
+else
+if output = 22
+wait cycle
+set output 23
+else
+if output = 23
+wait cycle
+set output 24
+else
+if output = 24
+wait cycle
+set output 25
+else
+if output = 25
+wait cycle
+set output 26
+else
+if output = 26
+wait cycle
+set output 27
+else
+if output = 27
+wait cycle
+set output 28
+else
+if output = 28
+wait cycle
+set output 29
+else
+if output = 29
+wait cycle
+set output 30
+else
+if output = 30
+wait cycle
+set output 31
+else
+if output = 31
+wait cycle
+set output 32
+else
+if output = 32
+wait cycle
+set output 33
+else
+if output = 33
+wait cycle
+set output 34
+else
+if output = 34
+wait cycle
+set output 35
+else
+if output = 35
+wait cycle
+set output 36
+else
+if output = 36
+wait cycle
+set output 37
+else
+if output = 37
+wait cycle
+set output 38
+else
+if output = 38
+wait cycle
+set output 39
+else
+if output = 39
+wait cycle
+set output 40
+else
+if output = 40
+wait cycle
+set output 41
+else
+if output = 41
+wait cycle
+set output 42
+else
+if output = 42
+wait cycle
+set output 43
+else
+if output = 43
+wait cycle
+set output 44
+else
+if output = 44
+wait cycle 
+set output 45
+else
+if output = 45
+wait cycle
+set output 46
+else
+if output = 46
+wait cycle
+set output 47
+else
+if output = 47
+wait cycle
+set output 48
+else
+if output = 48
+wait cycle
+set output 49
+else
+if output = 49
+wait cycle
+set output 50
+else
+if output = 50
+wait cycle
+set output 51
+else
+if output = 51
+wait cycle
+set output 52
+else
+if output = 52
+wait cycle
+set output 53
+else
+if output = 53
+wait cycle
+set output 54
+else
+if output = 54
+wait cycle
+set output 55
+else
+if output = 55
+wait cycle
+set output 56
+wait cycle 
+set output 57
+wait cycle 
+set output 58
+wait cycle 
+set output 59
+wait cycle 
+set output 60
+wait cycle 
+set output 61
+wait cycle 
+set output 62
+wait cycle 
+set output 63
+wait cycle 
+set output 64
+wait cycle 
+set output 65
+wait cycle 
+set output 66
+wait cycle 
+set output 67
+wait cycle 
+set output 68
+wait cycle 
+set output 69
+wait cycle 
+set output 70
+wait cycle 
+set output 71
+wait cycle 
+set output 72
+wait cycle 
+set output 73
+wait cycle 
+set output 74
+wait cycle 
+set output 75
+wait cycle 
+set output 76
+wait cycle 
+set output 77
+wait cycle 
+set output 78
+wait cycle 
+set output 79
+wait cycle 
+set output 80
+wait cycle 
+set output 81
+wait cycle 
+set output 82
+wait cycle 
+set output 83
+wait cycle 
+set output 84
+wait cycle 
+set output 85
+wait cycle 
+set output 86
+wait cycle 
+set output 87
+wait cycle 
+set output 88
+wait cycle 
+set output 89
+wait cycle 
+set output 90
+wait cycle 
+set output 91
+wait cycle 
+set output 92
+wait cycle 
+set output 93
+wait cycle 
+set output 94
+wait cycle 
+set output 95
+wait cycle 
+set output 96
+wait cycle 
+set output 97
+wait cycle 
+set output 98
+wait cycle 
+set output 99
+wait cycle 
+set output 100
+wait cycle 
+set output 101
+wait cycle 
+set output 102
+wait cycle 
+set output 103
+wait cycle 
+set output 104
+wait cycle 
+set output 105
+wait cycle 
+set output 106
+wait cycle 
+set output 107
+wait cycle 
+set output 108
+wait cycle 
+set output 109
+wait cycle 
+set output 110
+wait cycle 
+set output 111
+wait cycle 
+set output 112
+wait cycle 
+set output 113
+wait cycle 
+set output 114
+wait cycle 
+set output 115
+wait cycle 
+set output 116
+wait cycle 
+set output 117
+wait cycle 
+set output 118
+wait cycle 
+set output 119
+wait cycle 
+set output 120
+wait cycle 
+set output 121
+wait cycle 
+set output 122
+wait cycle 
+set output 123
+wait cycle 
+set output 124
+wait cycle 
+set output 125
+wait cycle 
+set output 126
+wait cycle 
+set output 127
+endif
+next
+if output = 127
+wait cycle
+set output 126
+else
+if output = 126
+wait cycle
+set output 125
+else
+if output = 125
+wait cycle
+set output 124
+else
+if output = 124
+wait cycle
+set output 123
+else
+if output = 123
+wait cycle
+set output 122
+else
+if output = 122
+wait cycle
+set output 121
+else
+if output = 121
+wait cycle
+set output 120
+else
+if output = 120
+wait cycle
+set output 119
+else
+if output = 119
+wait cycle
+set output 118
+else
+if output = 118
+wait cycle
+set output 117
+else
+if output = 117
+wait cycle
+set output 116
+wait cycle 
+else
+if output = 116
+wait cycle
+set output 115
+else
+if output = 115
+wait cycle
+set output 114
+else
+if output = 114
+wait cycle
+set output 113
+else
+if output = 113
+wait cycle
+set output 112
+else
+if output = 112
+wait cycle
+set output 111
+wait cycle 
+else
+if output = 111
+wait cycle
+set output 110
+else
+if output = 110
+wait cycle
+set output 109
+else
+if output = 109
+wait cycle
+set output 108
+else
+if output = 108
+wait cycle 
+set output 107
+else
+if output = 107
+wait cycle
+set output 106
+else
+if output = 106
+wait cycle
+set output 105
+else
+if output = 105
+wait cycle
+set output 104
+else
+if output = 104
+wait cycle
+set output 103
+else
+if output = 103
+wait cycle
+set output 102
+else
+if output = 102
+wait cycle
+set output 101
+else
+if output = 101
+wait cycle
+set output 100
+else
+if output = 100
+wait cycle
+set output 99
+else
+if output = 99
+wait cycle
+set output 98
+else
+if output = 98
+wait cycle
+set output 97
+else
+if output = 97
+wait cycle
+set output 96
+else
+if output = 96
+wait cycle
+set output 95
+else
+if output = 95
+wait cycle
+set output 94
+else
+if output = 94
+wait cycle
+set output 93
+else
+if output = 93
+wait cycle
+set output 92
+else
+if output = 92
+wait cycle
+set output 91
+else
+if output = 91
+wait cycle
+set output 90
+else
+if output = 90
+wait cycle
+set output 89
+else
+if output = 89
+wait cycle
+set output 88
+else
+if output = 88
+wait cycle
+set output 87
+else
+if output = 87
+wait cycle
+set output 86
+else
+if output = 86
+wait cycle
+set output 85
+else
+if output = 85
+wait cycle
+set output 84
+else
+if output = 84
+wait cycle
+set output 83
+else
+if output = 83
+wait cycle
+set output 82
+else
+if output = 82
+wait cycle
+set output 81
+else
+if output = 81
+wait cycle
+set output 80
+else
+if output = 80
+wait cycle
+set output 79
+else
+if output = 79
+wait cycle
+set output 78
+else
+if output = 78
+wait cycle 
+set output 77
+else
+if output = 77
+wait cycle 
+set output 76
+else
+if output = 76
+wait cycle
+set output 75
+else
+if output = 75
+wait cycle
+set output 74
+else
+if output = 74
+wait cycle
+set output 73
+else
+if output = 73
+wait cycle
+set output 72
+else
+if output = 72
+wait cycle
+set output 71
+else
+if output = 71
+wait cycle
+set output 70
+else
+if output = 70
+wait cycle
+set output 69
+else
+if output = 69
+wait cycle
+set output 68
+else
+if output = 68
+wait cycle 
+set output 67
+wait cycle
+else
+if output = 67
+wait cycle
+set output 66
+else
+if output = 66
+wait cycle
+set output 65
+else
+if output = 65
+wait cycle
+set output 64
+else
+if output = 64
+wait cycle
+set output 63
+else
+if output = 63
+wait cycle
+set output 62
+else
+if output = 62
+wait cycle
+set output 61
+else
+if output = 61
+wait cycle
+set output 60
+else
+if output = 60
+wait cycle
+set output 59
+else
+if output = 59
+wait cycle 
+set output 58
+else
+if output = 58
+wait cycle
+set output 57
+else
+if output = 57
+wait cycle
+set output 56
+else
+if output = 56
+wait cycle
+set output 55
+wait cycle
+set output 54
+wait cycle 
+set output 53
+wait cycle 
+set output 52
+wait cycle 
+set output 51
+wait cycle 
+set output 50
+wait cycle 
+set output 49
+wait cycle 
+set output 48
+wait cycle 
+set output 47
+wait cycle 
+set output 46
+wait cycle 
+set output 45
+wait cycle 
+set output 44
+wait cycle 
+set output 43
+wait cycle 
+set output 42
+wait cycle 
+set output 41
+wait cycle 
+set output 40
+wait cycle 
+set output 39
+wait cycle 
+set output 38
+wait cycle 
+set output 37
+wait cycle 
+set output 36
+wait cycle 
+set output 35
+wait cycle 
+set output 34
+wait cycle 
+set output 33
+wait cycle 
+set output 32
+wait cycle 
+set output 31
+wait cycle 
+set output 30
+wait cycle 
+set output 29
+wait cycle 
+set output 28
+wait cycle 
+set output 27
+wait cycle 
+set output 26
+wait cycle 
+set output 25
+wait cycle 
+set output 24
+wait cycle 
+set output 23
+wait cycle 
+set output 22
+wait cycle 
+set output 21
+wait cycle 
+set output 20
+wait cycle
+set output 19
+wait cycle
+set output 18
+wait cycle
+set output 17
+wait cycle
+set output 16
+wait cycle
+set output 15
+wait cycle
+set output 14
+wait cycle
+set output 13
+wait cycle
+set output 12
+wait cycle
+set output 11
+wait cycle
+set output 10
+wait cycle
+set output 9
+wait cycle
+set output 8
+wait cycle
+set output 7
+wait cycle
+set output 6
+wait cycle
+set output 5
+wait cycle
+set output 4
+wait cycle
+set output 3
+wait cycle
+set output 2
+wait cycle
+set output 1
+wait cycle
+set output 0
+endif
+next
+

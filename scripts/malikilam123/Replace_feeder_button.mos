@@ -1,0 +1,15 @@
+# malikilam123
+#
+#  Replace feeder button
+#
+!name Replace feeder button
+!autoload
+
+Variable global ReplaceFeederVariable
+
+set ReplaceFeederVariable 1
+
+# 1 equals turning the function being fed to the Magic Button on and 0 equals
+# turning it off this Set action turns on the function being fed to the Magic
+# Button (by setting it to the value 1).  Inside the Magic Button script you
+# will turn the Feeding action off by resetting the global variable to zero

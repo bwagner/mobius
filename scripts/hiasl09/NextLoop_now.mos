@@ -1,0 +1,67 @@
+# hiasl09
+#
+# Quant Next Loop
+#
+# My scripts are adapted to my style of playing which is mainly multitrack
+# looping, muting and unmuting of tracks. I use as Nobels MF1 foot controller
+# which can only send program changes so some of the scripts are written to
+# have more than one function on one button.
+# I hope some ideas are useful for other loopers to achieve similar functionality
+# or improve it and hopefully tell me how.
+#
+# My settings are: 
+# Quantize=off, 
+# switch Quant = off, 
+# Mute Mode = start, 
+# Loop copy = off, 
+# track copy = timing.
+# 
+#
+# I tried to cover a lot of Next Loop appearances by the use of two buttons.
+#
+# unquantized
+#
+# this script does NextLoop unquantized (immediately) and also retriggers
+# (unmutes) all other loops, if another track is in "switching" mode (quantized
+# NextLoop, by the above script) it will be switched to Next Loop
+# simoultanously.
+#
+# (nice to have some percussive things in one track beeing muted and
+# retriggered at the beginning of a new phrase or having more tracks going to
+# NextLoop at the same time, even if they have different lengths.
+#################################
+!name NextLoopNow
+
+Variable track selected
+set selected on
+Variable track changeMax
+
+For all
+Variable track switching
+
+if selected = on
+    if switching = on
+        Undo
+        set switchQuant off
+    endif
+
+    NextLoop
+    set selected off
+else
+    if switching = on
+        Undo
+        set switchQuant off
+        NextLoop
+    else
+        Retrigger
+    endif
+endif
+
+For All
+set switching off
+next
+
+set changeMax 0
+next
+end
+#################################

@@ -1,0 +1,1035 @@
+# masxsim
+#
+# Ambient End
+#
+
+!name Ambient End
+variable Global aEnd
+if aEnd = 1
+Jump cEnd
+else
+set aEnd 1
+wait msecs 20
+if aEnd = 0
+Jump dEnd
+else
+For all
+set output 126
+next
+wait msecs 100
+endif
+if aEnd = 0
+Jump dEnd
+else
+For all
+set output 125
+next
+wait msecs 100
+endif
+if aEnd = 0
+Jump dEnd
+else
+For all
+set output 124
+next
+wait msecs 100
+endif
+if aEnd = 0
+Jump dEnd
+else
+For all
+set output 123
+next
+wait msecs 100
+endif
+if aEnd = 0
+Jump dEnd
+else
+For all
+set output 122
+next
+wait msecs 100
+endif
+if aEnd = 0
+Jump dEnd
+else
+For all
+set output 121
+next
+wait msecs 100
+endif
+if aEnd = 0
+Jump dEnd
+else
+For all
+set output 120
+next
+wait msecs 100
+endif
+if aEnd = 0
+Jump dEnd
+else
+For all
+set output 119
+next
+wait msecs 100
+endif
+if aEnd = 0
+Jump dEnd
+else
+For all
+set output 118
+next
+wait msecs 100
+endif
+if aEnd = 0
+Jump dEnd
+else
+For all
+set output 117
+next
+wait msecs 100
+endif
+if aEnd = 0
+Jump dEnd
+else
+For all
+set output 116
+next
+wait msecs 100
+endif
+if aEnd = 0
+Jump dEnd
+else
+For all
+set output 115
+next
+wait msecs 100
+endif
+if aEnd = 0
+Jump dEnd
+else
+For all
+set output 114
+next
+wait msecs 100
+endif
+if aEnd = 0
+Jump dEnd
+else
+For all
+set output 113
+next
+wait msecs 100
+endif
+if aEnd = 0
+Jump dEnd
+else
+For all
+set output 112
+next
+wait msecs 100
+endif
+if aEnd = 0
+Jump dEnd
+else
+For all
+set output 111
+next
+wait msecs 100
+endif
+if aEnd = 0
+Jump dEnd
+else
+For all
+set output 110
+next
+wait msecs 100
+endif
+if aEnd = 0
+Jump dEnd
+else
+For all
+set output 109
+next
+wait msecs 100
+endif
+if aEnd = 0
+Jump dEnd
+else
+For all
+set output 108
+next
+wait msecs 100
+endif
+if aEnd = 0
+Jump dEnd
+else
+For all
+set output 107
+next
+wait msecs 100
+endif
+if aEnd = 0
+Jump dEnd
+else
+For all
+set output 106
+next
+wait msecs 100
+endif
+if aEnd = 0
+Jump dEnd
+else
+For all
+set output 105
+next
+wait msecs 100
+endif
+if aEnd = 0
+Jump dEnd
+else
+For all
+set output 104
+next
+wait msecs 100
+endif
+if aEnd = 0
+Jump dEnd
+else
+For all
+set output 103
+next
+wait msecs 100
+endif
+if aEnd = 0
+Jump dEnd
+else
+For all
+set output 102
+next
+wait msecs 100
+endif
+if aEnd = 0
+Jump dEnd
+else
+For all
+set output 101
+next
+wait msecs 100
+endif
+if aEnd = 0
+Jump dEnd
+else
+For all
+set output 100
+next
+wait msecs 100
+endif
+if aEnd = 0
+Jump dEnd
+else
+For all
+set output 99
+next
+wait msecs 100
+endif
+if aEnd = 0
+Jump dEnd
+else
+For all
+set output 98
+next
+wait msecs 100
+endif
+if aEnd = 0
+Jump dEnd
+else
+For all
+set output 97
+next
+wait msecs 100
+endif
+if aEnd = 0
+Jump dEnd
+else
+For all
+set output 96
+next
+wait msecs 100
+endif
+if aEnd = 0
+Jump dEnd
+else
+For all
+set output 95
+next
+wait msecs 100
+endif
+if aEnd = 0
+Jump dEnd
+else
+For all
+set output 94
+next
+wait msecs 100
+endif
+if aEnd = 0
+Jump dEnd
+else
+For all
+set output 93
+next
+wait msecs 100
+endif
+if aEnd = 0
+Jump dEnd
+else
+For all
+set output 92
+next
+wait msecs 100
+endif
+if aEnd = 0
+Jump dEnd
+else
+For all
+set output 91
+next
+wait msecs 100
+endif
+if aEnd = 0
+Jump dEnd
+else
+For all
+set output 90
+next
+wait msecs 100
+endif
+if aEnd = 0
+Jump dEnd
+else
+For all
+set output 89
+next
+wait msecs 100
+endif
+if aEnd = 0
+Jump dEnd
+else
+For all
+set output 88
+next
+wait msecs 100
+endif
+if aEnd = 0
+Jump dEnd
+else
+For all
+set output 87
+next
+wait msecs 100
+endif
+if aEnd = 0
+Jump dEnd
+else
+For all
+set output 86
+next
+wait msecs 100
+endif
+if aEnd = 0
+Jump dEnd
+else
+For all
+set output 85
+next
+wait msecs 100
+endif
+if aEnd = 0
+Jump dEnd
+else
+For all
+set output 84
+next
+wait msecs 100
+endif
+if aEnd = 0
+Jump dEnd
+else
+For all
+set output 83
+next
+wait msecs 100
+endif
+if aEnd = 0
+Jump dEnd
+else
+For all
+set output 82
+next
+wait msecs 100
+endif
+if aEnd = 0
+Jump dEnd
+else
+For all
+set output 81
+next
+wait msecs 100
+endif
+if aEnd = 0
+Jump dEnd
+else
+For all
+set output 80
+next
+wait msecs 100
+endif
+if aEnd = 0
+Jump dEnd
+else
+For all
+set output 79
+next
+wait msecs 100
+endif
+if aEnd = 0
+Jump dEnd
+else
+For all
+set output 78
+next
+wait msecs 100
+endif
+if aEnd = 0
+Jump dEnd
+else
+For all
+set output 77
+next
+wait msecs 100
+endif
+if aEnd = 0
+Jump dEnd
+else
+For all
+set output 76
+next
+wait msecs 100
+endif
+if aEnd = 0
+Jump dEnd
+else
+For all
+set output 75
+next
+wait msecs 100
+endif
+if aEnd = 0
+Jump dEnd
+else
+For all
+set output 74
+next
+wait msecs 100
+endif
+if aEnd = 0
+Jump dEnd
+else
+For all
+set output 73
+next
+wait msecs 100
+endif
+if aEnd = 0
+Jump dEnd
+else
+For all
+set output 72
+next
+wait msecs 100
+endif
+if aEnd = 0
+Jump dEnd
+else
+For all
+set output 71
+next
+wait msecs 100
+endif
+if aEnd = 0
+Jump dEnd
+else
+For all
+set output 70
+next
+wait msecs 100
+endif
+if aEnd = 0
+Jump dEnd
+else
+For all
+set output 69
+next
+wait msecs 100
+endif
+if aEnd = 0
+Jump dEnd
+else
+For all
+set output 68
+next
+wait msecs 100
+endif
+if aEnd = 0
+Jump dEnd
+else
+For all
+set output 67
+next
+wait msecs 100
+endif
+if aEnd = 0
+Jump dEnd
+else
+For all
+set output 66
+next
+wait msecs 100
+endif
+if aEnd = 0
+Jump dEnd
+else
+For all
+set output 65
+next
+wait msecs 100
+endif
+if aEnd = 0
+Jump dEnd
+else
+For all
+set output 64
+next
+wait msecs 100
+endif
+if aEnd = 0
+Jump dEnd
+else
+For all
+set output 63
+next
+wait msecs 100
+endif
+if aEnd = 0
+Jump dEnd
+else
+For all
+set output 62
+next
+wait msecs 100
+endif
+if aEnd = 0
+Jump dEnd
+else
+For all
+set output 61
+next
+wait msecs 100
+endif
+if aEnd = 0
+Jump dEnd
+else
+For all
+set output 60
+next
+wait msecs 100
+endif
+if aEnd = 0
+Jump dEnd
+else
+For all
+set output 59
+next
+wait msecs 100
+endif
+if aEnd = 0
+Jump dEnd
+else
+For all
+set output 58
+next
+wait msecs 100
+endif
+if aEnd = 0
+Jump dEnd
+else
+For all
+set output 57
+next
+wait msecs 100
+endif
+if aEnd = 0
+Jump dEnd
+else
+For all
+set output 56
+next
+wait msecs 100
+endif
+if aEnd = 0
+Jump dEnd
+else
+For all
+set output 55
+next
+wait msecs 100
+endif
+if aEnd = 0
+Jump dEnd
+else
+For all
+set output 54
+next
+wait msecs 100
+endif
+if aEnd = 0
+Jump dEnd
+else
+For all
+set output 53
+next
+wait msecs 100
+endif
+if aEnd = 0
+Jump dEnd
+else
+For all
+set output 52
+next
+wait msecs 100
+endif
+if aEnd = 0
+Jump dEnd
+else
+For all
+set output 51
+next
+wait msecs 100
+endif
+if aEnd = 0
+Jump dEnd
+else
+For all
+set output 50
+next
+wait msecs 100
+endif
+if aEnd = 0
+Jump dEnd
+else
+For all
+set output 49
+next
+wait msecs 100
+endif
+if aEnd = 0
+Jump dEnd
+else
+For all
+set output 48
+next
+wait msecs 100
+endif
+if aEnd = 0
+Jump dEnd
+else
+For all
+set output 47
+next
+wait msecs 100
+endif
+if aEnd = 0
+Jump dEnd
+else
+For all
+set output 46
+next
+wait msecs 100
+endif
+if aEnd = 0
+Jump dEnd
+else
+For all
+set output 45
+next
+wait msecs 100
+endif
+if aEnd = 0
+Jump dEnd
+else
+For all
+set output 44
+next
+wait msecs 100
+endif
+if aEnd = 0
+Jump dEnd
+else
+For all
+set output 43
+next
+wait msecs 100
+endif
+if aEnd = 0
+Jump dEnd
+else
+For all
+set output 42
+next
+wait msecs 100
+endif
+if aEnd = 0
+Jump dEnd
+else
+For all
+set output 41
+next
+wait msecs 100
+endif
+if aEnd = 0
+Jump dEnd
+else
+For all
+set output 40
+next
+wait msecs 100
+endif
+if aEnd = 0
+Jump dEnd
+else
+For all
+set output 39
+next
+wait msecs 100
+endif
+if aEnd = 0
+Jump dEnd
+else
+For all
+set output 38
+next
+wait msecs 100
+endif
+if aEnd = 0
+Jump dEnd
+else
+For all
+set output 37
+next
+wait msecs 100
+endif
+if aEnd = 0
+Jump dEnd
+else
+For all
+set output 36
+next
+wait msecs 100
+endif
+if aEnd = 0
+Jump dEnd
+else
+For all
+set output 35
+next
+wait msecs 100
+endif
+if aEnd = 0
+Jump dEnd
+else
+For all
+set output 34
+next
+wait msecs 100
+endif
+if aEnd = 0
+Jump dEnd
+else
+For all
+set output 33
+next
+wait msecs 100
+endif
+if aEnd = 0
+Jump dEnd
+else
+For all
+set output 32
+next
+wait msecs 100
+endif
+if aEnd = 0
+Jump dEnd
+else
+For all
+set output 31
+next
+wait msecs 100
+endif
+if aEnd = 0
+Jump dEnd
+else
+For all
+set output 30
+next
+wait msecs 100
+endif
+if aEnd = 0
+Jump dEnd
+else
+For all
+set output 29
+next
+wait msecs 100
+endif
+if aEnd = 0
+Jump dEnd
+else
+For all
+set output 28
+next
+wait msecs 100
+endif
+if aEnd = 0
+Jump dEnd
+else
+For all
+set output 27
+next
+wait msecs 100
+endif
+if aEnd = 0
+Jump dEnd
+else
+For all
+set output 26
+next
+wait msecs 100
+endif
+if aEnd = 0
+Jump dEnd
+else
+For all
+set output 25
+next
+wait msecs 100
+endif
+if aEnd = 0
+Jump dEnd
+else
+For all
+set output 24
+next
+wait msecs 100
+endif
+if aEnd = 0
+Jump dEnd
+else
+For all
+set output 23
+next
+wait msecs 100
+endif
+if aEnd = 0
+Jump dEnd
+else
+For all
+set output 22
+next
+wait msecs 100
+endif
+if aEnd = 0
+Jump dEnd
+else
+For all
+set output 21
+next
+wait msecs 100
+endif
+if aEnd = 0
+Jump dEnd
+else
+For all
+set output 20
+next
+wait msecs 100
+endif
+if aEnd = 0
+Jump dEnd
+else
+For all
+set output 19
+next
+wait msecs 100
+endif
+if aEnd = 0
+Jump dEnd
+else
+For all
+set output 18
+next
+wait msecs 100
+endif
+if aEnd = 0
+Jump dEnd
+else
+For all
+set output 17
+next
+wait msecs 100
+endif
+if aEnd = 0
+Jump dEnd
+else
+For all
+set output 16
+next
+wait msecs 100
+endif
+if aEnd = 0
+Jump dEnd
+else
+For all
+set output 15
+next
+wait msecs 100
+endif
+if aEnd = 0
+Jump dEnd
+else
+For all
+set output 14
+next
+wait msecs 100
+endif
+if aEnd = 0
+Jump dEnd
+else
+For all
+set output 13
+next
+wait msecs 100
+endif
+if aEnd = 0
+Jump dEnd
+else
+For all
+set output 12
+next
+wait msecs 100
+endif
+if aEnd = 0
+Jump dEnd
+else
+For all
+set output 11
+next
+wait msecs 100
+endif
+if aEnd = 0
+Jump dEnd
+else
+For all
+set output 10
+next
+wait msecs 100
+endif
+if aEnd = 0
+Jump dEnd
+else
+For all
+set output 9
+next
+wait msecs 100
+endif
+if aEnd = 0
+Jump dEnd
+else
+For all
+set output 8
+next
+wait msecs 100
+endif
+if aEnd = 0
+Jump dEnd
+else
+For all
+set output 7
+next
+wait msecs 100
+endif
+if aEnd = 0
+Jump dEnd
+else
+For all
+set output 6
+next
+wait msecs 100
+endif
+if aEnd = 0
+Jump dEnd
+else
+For all
+set output 5
+next
+wait msecs 100
+endif
+if aEnd = 0
+Jump dEnd
+else
+For all
+set output 4
+next
+wait msecs 100
+endif
+if aEnd = 0
+Jump dEnd
+else
+For all
+set output 3
+next
+wait msecs 100
+endif
+if aEnd = 0
+Jump dEnd
+else
+For all
+set output 2
+next
+wait msecs 100
+endif
+if aEnd = 0
+Jump dEnd
+else
+For all
+set output 1
+next
+wait msecs 100
+endif
+if aEnd = 0
+Jump dEnd
+else
+For all
+set output 0
+next
+wait msecs 100
+endif
+endif
+Label cEnd
+set aEnd 0
+GlobalReset
+Label dEnd
+end
+

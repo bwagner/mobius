@@ -1,0 +1,40 @@
+# fourstringri0t
+#
+# Emulation of the Line 6 DL4 Play Once button
+
+!name Play Once
+set muteMode start
+set switchQuant off
+Variable continue 1
+
+#test for muted (stopped)
+if inMute == true
+set insertMode replace
+Mute
+Call onetime
+end
+endif
+
+#insertMode is my unused variable, used as Play Once flag
+#if we are not already in Play Once, i.e. the flag is not set to "replace"
+if insertMode == rehearse
+set insertMode replace
+Call onetime
+end
+endif
+
+#otherwise simply restart the loop
+Retrigger
+set insertMode substitute
+Call onetime
+
+Proc onetime
+if inOverdub == true
+Play
+endif
+if insertMode == replace
+Wait end
+Mute
+set insertMode rehearse
+endif
+Endproc

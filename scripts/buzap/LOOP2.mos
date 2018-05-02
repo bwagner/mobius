@@ -1,0 +1,64 @@
+# Buzap, 23Sep09, 1.38
+#
+# LOOP2
+#
+# Loop pedal will act as Rec/Play/Overdub on Track 1
+# Switching between loops in NextLoop style
+#
+!name LOOP2
+
+## switch to track 1
+## if coded otherwise behaves Rec>Overdub instead of Rec>Play
+
+if track != 1 
+	Track 1
+endif
+
+
+if loopNumber == 2
+
+## same loop
+
+	if 	mode == reset
+			Record
+			end
+	
+	else 	if mode == mute
+			Reset
+			Record
+			end
+	
+	else 	if mode == play
+			Overdub
+			end
+	
+	else 	if mode != reset
+			Play
+			end		
+	endif
+	
+else 
+
+## other loop
+	
+	## if previous loop was empty, 
+	## trigger new loop with loopCopy=off, autoRecord=on
+	
+	if mode == reset
+		Variable saveLoopCopy loopCopy
+		Variable saveAutoRecord autoRecord
+		set loopCopy off
+		set autoRecord on
+		Loop 2
+		## waits until previous command is finished
+		Wait last
+		set loopCopy saveLoopCopy
+		set autoRecord saveAutoRecord
+	else
+		Loop 2
+	endif
+	
+endif
+
+#### END LOOP2
+

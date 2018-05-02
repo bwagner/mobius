@@ -1,0 +1,38 @@
+'Ambient Insert' has four stages:
+    First time one starts the script (pushes a button or steps on a switch) it puts selected track in 
+'Overdub' mode so one can prepare the transition.
+    Once ready, push the button second time - script then softly enters 'Insert' mode.
+    When used third time, the script softly returns to 'Overdub' mode and stays there. 
+This lets you to make a connection even more soft.
+    Forth time one steps on the switch - track returns to 'Play" mode.
+The script has a self-protection during transition phases (Overdub - Insert and Insert - Overdub) 
+from accidentally starting script twice causing jumps in Feedback and Output levels.
+
+'Ambient Replace' is in fact Overdub with feedback = 0. It works in a similar way as 'Ambient Insert'.
+    First time - Overdub.
+    Second time - feedback and output levels slowly go down to 0 - you are in (fake) 'Replace' mode.
+    Third time - feedback and output levels slowly go up to 127. You are in Overdub mode.
+    Fourth time - Play mode.
+It also has that double-start protection.
+
+'Ambient End' with one button push gives you a nice fading song end, then performs a Global Reset. 
+    Second push anytime performs a Global Reset right away.
+
+'Ambient Mute', when first used slowly lowers output level down to 0 and then goes into Mute mode. 
+Double-click (or press) mutes a track right away (waiting time 300 msecs). 
+    When used a second time, the script goes to Play mode and slowly rises output level up to 127. 
+Doublepress unmutes a track immediately.
+
+'Ambient Pause' when first used drops the rate down to -48 and then stops the track. 
+    Second time it used, the track starts to play and the rate goes back to normal. 
+'Double-click' stops and starts the track right away.
+
+'Ambient Clear', 'Ambient Reset', 'Ambient General Reset' and 'Ambient End' are variations on the same theme. 
+When started, scripts bring output level (levels in case of 'End') down to 0 and then do what they are supposed to. 
+'Double-click' makes them do it right away. 'Clear' clears the track and goes to Overdub mode, Reset and 
+General Reset are what they are. 
+I use 'Ambient End' to end a composition. It really slowly brings down output levels of all tracks and 
+then performs Global Reset.
+
+Enjoy!
+Max

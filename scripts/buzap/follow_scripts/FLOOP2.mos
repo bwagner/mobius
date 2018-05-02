@@ -1,0 +1,129 @@
+# Buzap, 25Sep09, 1.38
+#
+# FLOOP1
+#
+!name FLOOP2
+
+# Loop pedal will act as Rec/Play/Overdub
+# Switching between loops in NextLoop style
+# Additional switching ("follow") of corresponding Track2 loop
+
+#### Global Variables for Follow function ####
+Variable global followMaster1Track2 0
+Variable global followMaster2Track2 0
+Variable global followMaster3Track2 0
+Variable global followMaster4Track2 0
+Variable global followMaster5Track2 0
+####
+
+
+## switch to track 1
+## if coded otherwise behaves Rec>Overdub instead of Rec>Play
+
+if track != 1 
+	Track 1
+endif
+
+
+if loopNumber == 2
+
+## same loop
+
+	if 	mode == reset
+			Record
+			end
+	
+	else 	if mode == mute
+			Reset
+			Record
+			end
+	
+	else 	if mode == play
+			Overdub
+			end
+	
+	else 	if mode != reset
+			Play
+			end		
+	endif
+	
+else 
+
+## other loop
+	
+	## if previous loop was empty, 
+	## trigger new loop with loopCopy=off, autoRecord=on
+	
+	if mode == reset
+		Variable saveLoopCopy loopCopy
+		Variable saveAutoRecord autoRecord
+		set loopCopy off
+		set autoRecord on
+		Loop 2
+		## waits until previous command is finished
+		Wait last
+		set loopCopy saveLoopCopy
+		set autoRecord saveAutoRecord
+	else
+	
+		## check if loop is running in track2
+		Variable followLoopNumber 0
+		for 2
+			## checks if loop is running
+			if  mode == reset
+				set followLoopNumber 0
+			else
+				if mode == mute
+					set followLoopNumber 0
+				else
+					if output < 10
+						## track2 is silent, treat like mute
+						set followLoopNumber 0
+					else
+						## remember track2 loopnumber
+						set followLoopNumber loopNumber
+					endif
+				endif
+			endif
+		next
+		
+		## adjust follow parameter for current master track,
+		## not all of the if statements make sense,
+		## kept like this for easier script maintenance
+		for 1
+			if loopNumber == 1
+				set followMaster1Track2 followLoopNumber
+			else
+				if loopNumber == 2
+					set followMaster2Track2 followLoopNumber
+				else
+					if loopNumber == 3
+						set followMaster3Track2 followLoopNumber
+					else
+						if loopNumber == 4
+							set followMaster4Track2 followLoopNumber
+						else
+							if loopNumber == 5
+								set followMaster5Track2 followLoopNumber
+							endif
+						endif
+					endif
+				endif
+			endif
+		next
+
+					
+		## switch master track and possibly track 2
+		if followMaster2Track2 != 0
+			for 2
+				Loop followMaster2Track2
+			next
+		endif		
+		Loop 2
+	
+	endif
+	
+endif
+
+#### END LOOP2
+

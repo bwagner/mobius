@@ -1,0 +1,14 @@
+# opus_pi
+#
+# SUS Play/Pause
+#
+!name SUS Play/Pause
+set muteMode start
+Variable saveQuantize quantize
+set quantize off
+Pause
+end
+ 
+Label endSustain
+Pause
+set quantize saveQuantize

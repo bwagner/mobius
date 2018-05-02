@@ -1,0 +1,47 @@
+# zonemobius
+# 
+# Rec/Over/Mult
+#
+!name Rec/Over/Mult
+!autoload
+
+# Submitted by jengel_6, modified by jeff to move
+# trailing line comments to separate lines
+
+Variable global doubleMultiply
+
+#Multiply on second tap
+if doubleMultiply = 1
+
+  #Make it play, not Overdub, while waiting for Multiply
+  if mode == overdub
+    Overdub
+  endif
+
+  Multiply
+  set doubleMultiply 0
+  end
+
+else if mode == reset
+  Record
+  end
+
+else if mode == mute
+  Reset
+  Record
+  end
+
+else if mode == record
+  Play
+  end
+
+else if mode == multiply
+  Multiply
+  end
+
+else 
+  Overdub
+  set doubleMultiply 1
+  wait msecs 400 #adjust double click speed here
+  set doubleMultiply 0
+endif

@@ -1,0 +1,66 @@
+# malikilam123
+#
+#  Magic Button
+#
+!name Magic Button
+!autoload
+
+# This declares the global variable used in the Feeder Button script (i.e.,
+# imports it into the Magic Button script so that it can be read and acted on
+# by the Magic Button) 	
+	
+Variable global RecordFeederVariable	
+Variable global ReverseFeederVariable
+Variable global HalfSpeedFeederVariable	
+Variable global ReplaceFeederVariable
+
+	
+IF RecordFeederVariable == 1	
+	
+	Record
+	
+Endif	
+	
+#This statement resets the Feeder variable to zero (i.e, turns off its
+#feed-ready status) after the function has been called (triggered)	
+	
+set RecordFeederVariable 0	
+
+
+
+	
+	
+IF ReverseFeederVariable == 1	
+	
+	Reverse
+	
+Endif	
+		
+set ReverseFeederVariable 0	
+
+
+	
+
+	
+IF HalfSpeedFeederVariable == 1	
+	
+	HalfSpeed
+	
+Endif	
+	
+
+set HalfSpeedFeederVariable 0	
+
+
+
+
+	
+	
+IF ReplaceFeederVariable == 1	
+	
+	Replace
+	
+Endif	
+	
+
+set ReplaceFeederVariable 0	

@@ -1,0 +1,41 @@
+# hiasl09
+#
+# unquantized retrigger, toggle input
+#
+# My scripts are adapted to my style of playing which is mainly multitrack
+# looping, muting and unmuting of tracks. I use as Nobels MF1 foot controller
+# which can only send program changes so some of the scripts are written to
+# have more than one function on one button.
+# I hope some ideas are useful for other loopers to achieve similar functionality
+# or improve it and hopefully tell me how.
+#
+# My settings are: 
+# Quantize=off, 
+# switch Quant = off, 
+# Mute Mode = start, 
+# Loop copy = off, 
+# track copy = timing.
+# 
+#
+# simple, but I use it very often: this retriggers the current track, but when
+# in record or in overdub mode it toggles the input between 127 and zero.
+#
+#################################
+!UnqRetrigToggleMult
+Jump onoff mode = Record
+Jump onoff mode = Overdub
+
+Variable SaveSwitchQuant = $switchQuant
+set switchQuant off
+Retrigger
+set switchQuant SaveSwitchQuant
+end
+
+Label onoff
+Jump onagain Input = 0
+set Input 0
+end
+Label onagain
+set Input 127
+end
+#################################

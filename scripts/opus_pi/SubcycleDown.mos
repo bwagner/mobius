@@ -1,0 +1,108 @@
+# opus_pi
+#
+# Subcycle Shift Down
+#
+!name Subcycle Shift Down
+
+#Common Multiples of 4
+if 8thsPerCycle = 8
+set 8thsPerCycle 4
+Jump endScript
+endif
+if 8thsPerCycle = 16
+set 8thsPerCycle 8
+Jump endScript
+endif
+if 8thsPerCycle = 32
+set 8thsPerCycle 16
+Jump endScript
+endif
+if 8thsPerCycle = 64
+set 8thsPerCycle 32
+Jump endScript
+endif
+if 8thsPerCycle = 96
+set 8thsPerCycle 64
+Jump endScript
+endif
+if 8thsPerCycle = 4
+set 8thsPerCycle 96
+Jump endScript
+endif
+
+#Common Multiples of 3
+if 8thsPerCycle = 6
+set 8thsPerCycle 3
+Jump endScript
+endif
+if 8thsPerCycle = 9
+set 8thsPerCycle 6
+Jump endScript
+endif
+if 8thsPerCycle = 12
+set 8thsPerCycle 9
+Jump endScript
+endif
+if 8thsPerCycle = 24
+set 8thsPerCycle 12
+Jump endScript
+endif
+if 8thsPerCycle = 48
+set 8thsPerCycle 24
+Jump endScript
+endif
+if 8thsPerCycle = 3
+set 8thsPerCycle 48
+Jump endScript
+endif
+
+#Common Multiples of 5
+if 8thsPerCycle = 10
+set 8thsPerCycle 5
+Jump endScript
+endif
+if 8thsPerCycle = 15
+set 8thsPerCycle 10
+Jump endScript
+endif
+if 8thsPerCycle = 25
+set 8thsPerCycle 20
+Jump endScript
+endif
+if 8thsPerCycle = 40
+set 8thsPerCycle 20
+Jump endScript
+endif
+if 8thsPerCycle = 80
+set 8thsPerCycle 40
+Jump endScript
+endif
+if 8thsPerCycle = 5
+set 8thsPerCycle 80
+Jump endScript
+endif
+
+#Common Multiples of 7
+if 8thsPerCycle = 14
+set 8thsPerCycle 7
+Jump endScript
+endif
+if 8thsPerCycle = 21
+set 8thsPerCycle 14
+Jump endScript
+endif
+if 8thsPerCycle = 28
+set 8thsPerCycle 21
+Jump endScript
+endif
+if 8thsPerCycle = 56
+set 8thsPerCycle 28
+Jump endScript
+endif
+if 8thsPerCycle = 7
+set 8thsPerCycle 56
+Jump endScript
+endif
+
+Label endScript
+end

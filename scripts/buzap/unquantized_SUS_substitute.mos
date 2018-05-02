@@ -1,0 +1,28 @@
+# Buzap, 23Sep09
+#
+# force unquantized sustain substitute
+# Performs an unquantized Sustain(SUS) Substitute, even when in quantized mode.
+
+!name UNQSUSSUBST
+
+## script considers both trigger down & up
+!sustain
+
+Variable saveQuantize quantize
+
+## starting substitute (down)
+set quantize off
+SUSSubstitute
+end
+
+## during substitute
+#Label sustain
+#end
+
+## ending substitute (up)
+Label endSustain
+SUSSubstitute
+set quantize saveQuantize
+end
+
+#### end UNQSUSSUBST

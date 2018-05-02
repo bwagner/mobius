@@ -1,0 +1,38 @@
+# Buzap
+#
+# FGENRESET
+#
+!name FGENRESET
+
+############
+#### General Reset and reset follow parameters if track1 or track2
+#### Buzap, 25Sep2009, 1.38
+############
+
+#### Global Variables for Follow function ####
+Variable global followMaster1Track2 0
+Variable global followMaster2Track2 0
+Variable global followMaster3Track2 0
+Variable global followMaster4Track2 0
+Variable global followMaster5Track2 0
+####
+
+if track == 1
+	set followMaster1Track2 0
+	set followMaster2Track2 0
+	set followMaster3Track2 0
+	set followMaster4Track2 0
+	set followMaster5Track2 0
+else
+	if track == 2
+		set followMaster1Track2 0
+		set followMaster2Track2 0
+		set followMaster3Track2 0
+		set followMaster4Track2 0
+		set followMaster5Track2 0
+	endif
+endif
+
+GeneralReset
+
+#### END FRESET

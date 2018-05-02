@@ -1,0 +1,299 @@
+# masxsim
+#
+# Ambient Pause
+#
+!name Ambient Pause
+variable track aPause
+variable track bPause
+set quantize off
+if scaleRate = -48
+Jump cPause
+else
+set bPause 0
+if aPause = 0
+Jump endPause
+else
+set aPause 0
+set bPause 1
+wait msecs 300
+if bPause = 0
+Jump ePause
+else
+RateShift -1
+wait msecs 50
+RateShift -2
+wait msecs 50
+RateShift -3
+wait msecs 50
+RateShift -4
+wait msecs 50
+RateShift -5
+wait msecs 50
+RateShift -6
+wait msecs 50
+RateShift -7
+wait msecs 50
+RateShift -8
+wait msecs 50
+RateShift -9
+wait msecs 50
+RateShift -10
+wait msecs 50
+RateShift -11
+wait msecs 50
+RateShift -12
+wait msecs 50
+RateShift -13
+wait msecs 50
+RateShift -14
+wait msecs 50
+RateShift -15
+wait msecs 50
+RateShift -16
+wait msecs 50
+RateShift -17
+wait msecs 50
+RateShift -18
+wait msecs 50
+RateShift -19
+wait msecs 50
+RateShift -20
+wait msecs 50
+RateShift -21
+wait msecs 50
+RateShift -22
+wait msecs 50
+RateShift -23
+wait msecs 50
+RateShift -24
+set output 126
+wait msecs 50
+RateShift -25
+set output 123
+wait msecs 50
+RateShift -26
+set output 120
+wait msecs 50
+RateShift -27
+set output 117
+wait msecs 50
+RateShift -28
+set output 114
+wait msecs 50
+RateShift -29
+set output 111
+wait msecs 50
+RateShift -30
+set output 108
+wait msecs 50
+RateShift -31
+set output 105
+wait msecs 50
+RateShift -32
+set output 102
+wait msecs 50
+RateShift -33
+set output 99
+wait msecs 50
+RateShift -34
+set output 96
+wait msecs 50
+RateShift -35
+set output 93
+wait msecs 50
+RateShift -36
+set output 90
+wait msecs 50
+RateShift -37
+set output 87
+wait msecs 50
+RateShift -38
+set output 84
+wait msecs 50
+RateShift -39
+set output 81
+wait msecs 50
+RateShift -40
+set output 78
+wait msecs 50
+RateShift -41
+set output 75
+wait msecs 50
+RateShift -42
+set output 72
+wait msecs 50
+RateShift -43
+set output 69
+wait msecs 50
+RateShift -44
+set output 66
+wait msecs 50
+RateShift -45
+set output 63
+wait msecs 50
+RateShift -46
+set output 60
+wait msecs 50
+RateShift -47
+set output 57
+wait msecs 50
+RateShift -48
+set output 54
+wait msecs 50
+endif
+Label ePause
+RateShift -48
+Pause
+endif
+set aPause 1
+Jump endPause
+Label cPause
+Play
+set output 0
+set bPause 0
+endif
+if aPause = 0
+Jump endPause
+else
+set aPause 0
+set bPause 1
+wait msecs 300
+if bPause = 0
+Jump gPause
+else
+set output 54
+RateShift -47
+set output 57
+wait msecs 50
+RateShift -46
+set output 60
+wait msecs 50
+RateShift -45
+set output 63
+wait msecs 50
+RateShift -44
+set output 66
+wait msecs 50
+RateShift -43
+set output 69
+wait msecs 50
+RateShift -42
+set output 72
+wait msecs 50
+RateShift -41
+set output 75
+wait msecs 50
+RateShift -40
+set output 78
+wait msecs 50
+RateShift -39
+set output 81
+wait msecs 50
+RateShift -38
+set output 84
+wait msecs 50
+RateShift -37
+set output 87
+wait msecs 50
+RateShift -36
+set output 90
+wait msecs 50
+RateShift -35
+set output 93
+wait msecs 50
+RateShift -34
+set output 96
+wait msecs 50
+RateShift -33
+set output 99
+wait msecs 50
+RateShift -32
+set output 102
+wait msecs 50
+RateShift -31
+set output 105
+wait msecs 50
+RateShift -30
+set output 108
+wait msecs 50
+RateShift -29
+set output 111
+wait msecs 50
+RateShift -28
+set output 114
+wait msecs 50
+RateShift -27
+set output 117
+wait msecs 50
+RateShift -26
+set output 120
+wait msecs 50
+RateShift -25
+set output 123
+wait msecs 50
+RateShift -24
+set output 126
+wait msecs 50
+RateShift -23
+set output 127
+wait msecs 50
+RateShift -22
+wait msecs 50
+RateShift -21
+wait msecs 50
+RateShift -20
+wait msecs 50
+RateShift -19
+wait msecs 50
+RateShift -18
+wait msecs 50
+RateShift -17
+wait msecs 50
+RateShift -16
+wait msecs 50
+RateShift -15
+wait msecs 50
+RateShift -14
+wait msecs 50
+RateShift -13
+wait msecs 50
+RateShift -12
+wait msecs 50
+RateShift -11
+wait msecs 50
+RateShift -10
+wait msecs 50
+RateShift -9
+wait msecs 50
+RateShift -8
+wait msecs 50
+RateShift -7
+wait msecs 50
+RateShift -6
+wait msecs 50
+RateShift -5
+wait msecs 50
+RateShift -4
+wait msecs 50
+RateShift -3
+wait msecs 50
+RateShift -2
+wait msecs 50
+RateShift -1
+wait msecs 50
+RateShift 0
+wait msecs 50
+set aPause 1
+endif
+Jump endPause
+Label gPause
+RateShift 0
+set output 127
+Play
+endif
+set aPause 1
+Label endPause
+set quantize on
+
+
+

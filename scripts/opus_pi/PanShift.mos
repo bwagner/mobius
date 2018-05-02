@@ -1,0 +1,272 @@
+# opus_pi
+#
+# Pan Shift Forever
+#
+!name Pan Shift Forever
+
+variable savePan pan
+
+Variable global varKillScript
+set varKillScript 0
+
+Label doItAgain
+if varKillScript = 1
+Jump scriptEnd
+endif
+set pan 32
+Wait subcycles 1
+if varKillScript = 1
+Jump scriptEnd
+endif
+set pan 0
+Wait subcycles 1
+if varKillScript = 1
+Jump scriptEnd
+endif
+set pan 96
+Wait subcycles 1
+if varKillScript = 1
+Jump scriptEnd
+endif
+set pan 64
+Wait subcycles 1
+if varKillScript = 1
+Jump scriptEnd
+endif
+set pan 127
+Wait subcycles 1
+if varKillScript = 1
+Jump scriptEnd
+endif
+set pan 32
+Wait subcycles 1
+if varKillScript = 1
+Jump scriptEnd
+endif
+set pan 96
+Wait subcycles 1
+if varKillScript = 1
+Jump scriptEnd
+endif
+set pan 0
+Wait subcycles 1
+if varKillScript = 1
+Jump scriptEnd
+endif
+set pan 127
+Wait subcycles 1
+if varKillScript = 1
+Jump scriptEnd
+endif
+set pan 64
+Wait subcycles 1
+if varKillScript = 1
+Jump scriptEnd
+endif
+set pan 96
+Wait subcycles 1
+if varKillScript = 1
+Jump scriptEnd
+endif
+set pan 32
+Wait subcycles 1
+if varKillScript = 1
+Jump scriptEnd
+endif
+set pan 127
+Wait subcycles 1
+if varKillScript = 1
+Jump scriptEnd
+endif
+set pan 0
+Wait subcycles 1
+if varKillScript = 1
+Jump scriptEnd
+endif
+set pan 64
+Wait subcycles 1
+if varKillScript = 1
+Jump scriptEnd
+endif
+set pan 96
+Wait subcycles 1
+if varKillScript = 1
+Jump scriptEnd
+endif
+set pan 127
+Wait subcycles 1
+if varKillScript = 1
+Jump scriptEnd
+endif
+set pan 32
+Wait subcycles 1
+if varKillScript = 1
+Jump scriptEnd
+endif
+set pan 64
+Wait subcycles 1
+if varKillScript = 1
+Jump scriptEnd
+endif
+set pan 0
+Wait subcycles 1
+if varKillScript = 1
+Jump scriptEnd
+endif
+set pan 127
+Wait subcycles 1
+if varKillScript = 1
+Jump scriptEnd
+endif
+set pan 96
+Wait subcycles 1
+if varKillScript = 1
+Jump scriptEnd
+endif
+set pan 64
+Wait subcycles 1
+if varKillScript = 1
+Jump scriptEnd
+endif
+set pan 32
+Wait subcycles 1
+if varKillScript = 1
+Jump scriptEnd
+endif
+set pan 0
+Wait subcycles 1
+if varKillScript = 1
+Jump scriptEnd
+endif
+set pan 127
+Wait subcycles 1
+if varKillScript = 1
+Jump scriptEnd
+endif
+set pan 64
+Wait subcycles 1
+if varKillScript = 1
+Jump scriptEnd
+endif
+set pan 96
+Wait subcycles 1
+if varKillScript = 1
+Jump scriptEnd
+endif
+set pan 0
+Wait subcycles 1
+if varKillScript = 1
+Jump scriptEnd
+endif
+set pan 32
+Wait subcycles 1
+if varKillScript = 1
+Jump scriptEnd
+endif
+set pan 64
+Wait subcycles 1
+if varKillScript = 1
+Jump scriptEnd
+endif
+set pan 127
+Wait subcycles 1
+if varKillScript = 1
+Jump scriptEnd
+endif
+set pan 0
+Wait subcycles 1
+if varKillScript = 1
+Jump scriptEnd
+endif
+set pan 96
+Wait subcycles 1
+if varKillScript = 1
+Jump scriptEnd
+endif
+set pan 32
+Wait subcycles 1
+if varKillScript = 1
+Jump scriptEnd
+endif
+set pan 64
+Wait subcycles 1
+if varKillScript = 1
+Jump scriptEnd
+endif
+set pan 0
+Wait subcycles 1
+if varKillScript = 1
+Jump scriptEnd
+endif
+set pan 127
+Wait subcycles 1
+if varKillScript = 1
+Jump scriptEnd
+endif
+set pan 32
+Wait subcycles 1
+if varKillScript = 1
+Jump scriptEnd
+endif
+set pan 64
+Wait subcycles 1
+if varKillScript = 1
+Jump scriptEnd
+endif
+set pan 0
+Wait subcycles 1
+if varKillScript = 1
+Jump scriptEnd
+endif
+set pan 64
+Wait subcycles 1
+if varKillScript = 1
+Jump scriptEnd
+endif
+set pan 32
+Wait subcycles 1
+if varKillScript = 1
+Jump scriptEnd
+endif
+set pan 127
+Wait subcycles 1
+if varKillScript = 1
+Jump scriptEnd
+endif
+set pan 96
+Wait subcycles 1
+if varKillScript = 1
+Jump scriptEnd
+endif
+set pan 0
+Wait subcycles 1
+if varKillScript = 1
+Jump scriptEnd
+endif
+set pan 32
+Wait subcycles 1
+if varKillScript = 1
+Jump scriptEnd
+endif
+set pan 64
+Wait subcycles 1
+if varKillScript = 1
+Jump scriptEnd
+endif
+set pan 96
+Wait subcycles 1
+if varKillScript = 1
+Jump scriptEnd
+endif
+set pan 127
+Wait subcycles 1
+if varKillScript = 1
+Jump scriptEnd
+endif
+Jump doItAgain
+next
+
+Label scriptEnd
+set pan savePan
+endif
+end

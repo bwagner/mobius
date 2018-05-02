@@ -1,0 +1,48 @@
+# zonemobius
+# 
+# Ambient Overdub
+#
+!name Ambient Overdub
+!autoload
+
+# Slowly fade in an overdub, wait for awhile, then
+# slowly fade out and end the overdub.
+
+# This determines the duration of the fade.
+# It is the number of milliseconds we wait between
+# increasing or decreasing the input level.  There
+# are 128 steps in input level so with a 10 msec
+# delay the fade will take 1280 milliseconds, or about
+# one second.  Adjust this to suit your taste...
+
+Variable fadeWait 10
+
+
+# This will make the fade in start exactly at the start
+# of the loop.  If you want it to start immediately
+# comment out this line.
+Wait loop
+
+# make sure we're starting from zero
+set input 0
+
+# begin overdub
+OverdubOn
+
+# fade in
+while input < 127
+  Wait msec fadeWait
+  set input input + 1
+next
+
+# wait for the end of the loop
+Wait loop
+
+# fade out
+while input > 0
+  Wait msec fadeWait
+  set input input - 1
+next
+
+# turn off overdub
+OverdubOff
