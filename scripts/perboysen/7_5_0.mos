@@ -1,0 +1,25 @@
+# Per Boysen
+#
+# 7_5_0
+#
+# This a script idea that lets you step through a progression of two "chords"
+# (actually it is a Rate Shift/Varispeed parallel transcription, but I like to
+# try using it as "a chord progression"). Lets say your loop goes in a C major
+# chord style. On first script kick your loop will go to G, on second it will
+# go to F and on the third kick it will go back to C. You can modify this
+# script to crate other "chord progressions" to step through. 
+#
+# Tip: It's fun to work RateShift like this when in overdub mode. Start doing
+# that while playing the same note all the way until you get a grip of the
+# "multi lateral thinking" needed to improvise more freely with this trick. 
+
+!name 7_5_0
+!multiclick 10000
+Label click
+if clickCount = 1
+RateShift 7
+else if clickCount = 2
+RateShift 5
+else if clickCount = 3
+RateShift 0
+endif

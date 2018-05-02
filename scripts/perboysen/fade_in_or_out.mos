@@ -1,0 +1,37 @@
+# Per Boysen
+#
+# Fade In Or Out
+#
+# This is a useful script that performs a long fade out of the selected track.
+# If the track level is "0" the script does the opposite: a long fade in. So
+# you can assign one MIDI pedal to do both fade in and fade out. I use one
+# particular bank of my Behringer FCB1010 MIDI foot control board to target
+# this script directly at any of Moboius eight tracks. To assign it like that
+# in Mobius, use the "Configuration / MIDI Control" window and select each
+# track in the "Scope" pull-down menu. I also control this script from the
+# laptops number keys; key 1 triggering the script for track 1, key 2
+# triggering the script for key 2 etc etc. This has to be set up a little
+# differently, since there is no "Scope" menu for key control. You have to
+# create unique versions of the script for each track by adding a line saying
+# "for 1" if the script is to affect track 1. 
+#
+# One cool aspect in this script is that it remembers the previous track volume
+# level and when fading in again it fades back up to that level. So you can
+# easily combine this script with manually controlling track levels from a midi
+# mixer. 
+
+!name Fade In Or Out 
+!autoload 
+Variable track lastLevel 
+if output = 0 
+while output < lastLevel
+set output output + 1
+Wait msec 100
+next
+else
+set lastLevel output
+while output > 0
+set output output - 1
+Wait msec 100
+next
+endif

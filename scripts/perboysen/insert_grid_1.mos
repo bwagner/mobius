@@ -1,0 +1,27 @@
+# Per Boysen
+#
+# Insert Grid 1 (in Four Four)
+#
+# This is a "beat synced tremolo gate" that creates 32nd notes on each 16th
+# note cusp for one bar. You can use it to play long melody "lead" notes that
+# will also create a groovy background for the next time the loop plays back -
+# but then you will already be playing the next melody lead line that will
+# match the old, now percussively sliced up, line. How hard the script will
+# gate your audio depends on the feedback setting. Since I run Mobius in
+# "Expert Mode" I'm using the AltFeedback (not the Feedback) for that. You can
+# go from just a subtle coloring or the loop to hard gating à la Trance Techno.
+#
+# This version is for music in 4/4. I have modified versions of it that fits
+# playing in other meters (5/4, 6/8, 7/8).
+
+
+!name Insert Grid 1 in Four Four
+Wait cycle
+Variable save8thsPerCycle $8thsPerCycle
+set $save8thsPerCycle 8thsPerCycle
+set 8thsPerCycle 32
+repeat 32 8thsPerCycle
+SUSSubstitute
+Wait subcycle
+next
+set 8thsPerCycle $save8thsPerCycle 

@@ -1,0 +1,16 @@
+# Per Boysen
+#
+# Mute Track 4 (or whatever track) 
+#
+# This is just another small, but useful, script that lets me mute any track
+# from my MIDI mixer, no need bothering about which track is in focus. I press
+# the mute button of the MIDI mixers "track 4" and this script mutes Mobius'
+# track 4. 
+
+!name Mute Track 4
+
+for 4
+
+Mute
+
+next

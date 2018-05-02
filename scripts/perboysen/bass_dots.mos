@@ -1,0 +1,32 @@
+# Per Boysen
+#
+# Bass Dots
+#
+# This scripts inserts 16th note bass notes one octave under the note you are
+# playing when kicking it off. And it does it with a lovely glitch squeak! In
+# order to use it to its fullest benefit you should use it with Secondary
+# Feedback. (1) Enable Secondary Feedback in the "Configuration/PresetsGeneral"
+# window and (2) then go to "Configuration/Global Parameters/Modes" and set
+# Overdub and Multiply to "Ignore Secondary Feedback". This leaves Substitute
+# and Stutter to work with Secondary Feedback. What this gives is that you can
+# have a dedicated "Secondary Feedback Fader" to control how much of the old
+# audio will be replaced by the Bass Dot note added by this script. Using
+# Secondary Feedback makes the looper so much more playable! You can sculpt the
+# looping audio with good control over the "glitch dimension". 
+# FIXME: Per! Pretty sure this "RateShift 12" is part of the script and should
+# be moved onto the following line on its own.
+# I just took it as it is from the yahoo group: https://groups.yahoo.com/neo/groups/zonemobius/files
+# The file is called _pboy_scripts.html
+
+!name Bass DotsRateShift 12
+
+Wait last
+Substitute
+Wait subcycle
+Substitute
+Wait last
+RateShift -7
+Wait last
+Wait subcycles 
+RateShift 0
+next

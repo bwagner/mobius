@@ -1,0 +1,12 @@
+# Per Boysen
+#
+# Focus Lock Track 3 (or whatever track)
+#
+# I use this for a MIDI hand mixer button so I can grab a bunch of tracks and
+# instantly bring them out or into Focus Lock.
+
+!name Focus Lock Track 3
+for 3
+FocusLock
+next
+
