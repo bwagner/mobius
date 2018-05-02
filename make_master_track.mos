@@ -1,0 +1,6 @@
+# makes the currently selected track the master track
+# http://www.circularlabs.com/doc/v2/reference.htm#Sync Master Track
+!name Make Master Track
+
+SyncMasterTrack
+SyncMasterMidi
