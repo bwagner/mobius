@@ -1,6 +1,10 @@
 # makes the currently selected track the master track
-# http://www.circularlabs.com/doc/v2/reference.htm#Sync Master Track
+# we could have used SyncMaster:
+# https://bwagner.github.io/mobius/circularlabs_root/doc/v2/reference.htm#Sync%20Master%20Track+MIDI
+# http://www.circularlabs.com/doc/v2/reference.htm#Sync%20Master%20Track+MIDI
+# But we want to be able to selectively enable/disable SyncMasterMidi and SyncMasterTrack
 !name Make Master Track
 
+# SyncMaster
 SyncMasterTrack
 SyncMasterMidi
