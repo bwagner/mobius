@@ -1,8 +1,68 @@
 <html>
 <head>
-<title>Mobius Scripting</title><style type='text/css'>
+<title>Mobius Scripting</title>
+<style type='text/css'>
 <!-- 
-div.constraint,div.issue,div.note,div.notice     { margin-left: 2em; }dt.label       { display: run-in; }li           { margin-top: 0.3em; margin-bottom: 0.3em; }p           { margin-top: 0.6em; margin-bottom: 0.6em; }.diff-chg	{ background-color: orange; }.diff-del	{ background-color: red; text-decoration: line-through;}.diff-add	{ background-color: lime; }table          { empty-cells: show; }div.exampleInner { margin-left: 1em;                       margin-top: 0em; margin-bottom: 0em}div.exampleOuter {border: 4px double gray;                  margin: 0em; padding: 0em}div.exampleInner { background-color: #d5dee3;                   border-top-width: 4px;                   border-top-style: double;                   border-top-color: #d3d3d3;                   border-bottom-width: 4px;                   border-bottom-style: double;                   border-bottom-color: #d3d3d3;                   padding: 4px; margin: 0em }div.exampleWrapper { margin: 4px }div.exampleHeader { font-weight: bold; margin: 4px}body {  padding: 2em 1em 2em 70px;  margin: 0;  font-family: sans-serif;  color: black;  background: white;  background-position: top left;  background-attachment: fixed;  background-repeat: no-repeat;}:link { color: #00C; background: transparent }:visited { color: #609; background: transparent }a:active { color: #C00; background: transparent }a:link img, a:visited img { border-style: none } /* no border on img links */a img { color: white; }        /* trick to hide the border in Netscape 4 */@media all {                   /* hide the next rule from Netscape 4 */  a img { color: inherit; }    /* undo the color change above */}th, td { /* ns 4 */  font-family: sans-serif;}h1, h2, h3, h4, h5, h6 { text-align: left }/* background should be transparent, but WebTV has a bug */h1, h2, h3 { color: #005A9C; background: white }h1 { font: 170% sans-serif }h2 { font: 140% sans-serif }h3 { font: 120% sans-serif }h4 { font: bold 100% sans-serif }h5 { font: italic 100% sans-serif }h6 { font: small-caps 100% sans-serif }.hide { display: none }div.head { margin-bottom: 1em }div.head h1 { margin-top: 2em; clear: both }div.head table { margin-left: 2em; margin-top: 2em }p.copyright { font-size: small }p.copyright small { font-size: small }@media screen {  /* hide from IE3 */a[href]:hover { background: #ffa }}dd { margin-top: 0.3em; margin-bottom: 0.6em }dt { margin-top: 0; margin-bottom: 0 } /* opera 3.50 */dt { font-weight: bold }pre, code { font-family:monospace; font-size: medium }ul.toc {  list-style: disc;		/* Mac NS has problem with 'none' */  list-style: none;}-->
+div.constraint,div.issue,div.note,div.notice     { margin-left: 2em; }
+dt.label       { display: run-in; }
+li           { margin-top: 0.3em; margin-bottom: 0.3em; }
+p           { margin-top: 0.6em; margin-bottom: 0.6em; }
+.diff-chg	{ background-color: orange; }
+.diff-del	{ background-color: red; text-decoration: line-through;}
+.diff-add	{ background-color: lime; }
+table { empty-cells: show; }
+div.exampleInner { margin-left: 1em; margin-top: 0em; margin-bottom: 0em}
+div.exampleOuter {border: 4px double gray; margin: 0em; padding: 0em}
+div.exampleInner {
+  background-color: #d5dee3;
+  border-top-width: 4px;
+  border-top-style: double;
+  border-top-color: #d3d3d3;
+  border-bottom-width: 4px;
+  border-bottom-style: double;
+  border-bottom-color: #d3d3d3;
+  padding: 4px; margin: 0em 
+}
+div.exampleWrapper { margin: 4px }
+div.exampleHeader { font-weight: bold; margin: 4px}
+body {
+  padding: 2em 1em 2em 70px;
+  margin: 0;
+  font-family: sans-serif;
+  color: black;
+  background: white;
+  background-position: top left;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+:link { color: #00C; background: transparent }
+:visited { color: #609; background: transparent }
+a:active { color: #C00; background: transparent }
+a:link img, a:visited img { border-style: none } /* no border on img links */
+  a img { color: white; }        /* trick to hide the border in Netscape 4 */
+@media all {                   /* hide the next rule from Netscape 4 */  a img { color: inherit; }    /* undo the color change above */}
+th, td { /* ns 4 */  font-family: sans-serif;}
+h1, h2, h3, h4, h5, h6 { text-align: left }/* background should be transparent, but WebTV has a bug */
+h1, h2, h3 { color: #005A9C; background: white }
+h1 { font: 170% sans-serif }
+h2 { font: 140% sans-serif }
+h3 { font: 120% sans-serif }
+h4 { font: bold 100% sans-serif }
+h5 { font: italic 100% sans-serif }
+h6 { font: small-caps 100% sans-serif }
+.hide { display: none }
+div.head { margin-bottom: 1em }
+div.head h1 { margin-top: 2em; clear: both }
+div.head table { margin-left: 2em; margin-top: 2em }
+p.copyright { font-size: small }
+p.copyright small { font-size: small }
+@media screen {  /* hide from IE3 */a[href]:hover { background: #ffa }}
+dd { margin-top: 0.3em; margin-bottom: 0.6em }
+dt { margin-top: 0; margin-bottom: 0 } /* opera 3.50 */
+dt { font-weight: bold }
+pre, code { font-family:monospace; font-size: medium }
+ul.toc {  list-style: disc;		/* Mac NS has problem with 'none' */  list-style: none;}
+-->
 </style>
 </head>
 <body>
