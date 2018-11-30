@@ -1319,21 +1319,21 @@ an expression that is interpreted as one of only two distinguishable values: Tru
 </style>
 <pre class=computer>
   bool_expression = bool_term { or bool_term }
-  or = <span class="terminal">|</span> | <span class="terminal">||</span>
-  bool_term = bool_factor { and bool_factor }
-  and = <span class="terminal">&amp;</span> | <span class="terminal">&amp;&amp;</span>
-  bool_factor = bool_constant | comparison | not bool_factor | <span class="terminal">(</span> bool_expression <span class="terminal">)</span>
-  bool_constant = False | True
-  not = <span class="terminal">not</span> | <span class="terminal">!</span>
-  comparison = arithmetic_expression relation arithmetic_expression
-  relation = equal | <span class="terminal">&lt;</span> | <span class="terminal">&lt;=</span> | <span class="terminal">&gt;</span> | <span class="terminal">&gt;=</span>
-  equal = <span class="terminal">=</span> | <span class="terminal">==</span>
+  or              = <span class="terminal">|</span> | <span class="terminal">||</span>
+  bool_term       = bool_factor { and bool_factor }
+  and             = <span class="terminal">&amp;</span> | <span class="terminal">&amp;&amp;</span>
+  bool_factor     = bool_constant | comparison | not bool_factor | <span class="terminal">(</span> bool_expression <span class="terminal">)</span>
+  bool_constant   = False | True
+  not             = <span class="terminal">not</span> | <span class="terminal">!</span>
+  comparison      = arithmetic_expression relation arithmetic_expression
+  relation        = equal | <span class="terminal">&lt;</span> | <span class="terminal">&lt;=</span> | <span class="terminal">&gt;</span> | <span class="terminal">&gt;=</span>
+  equal           = <span class="terminal">=</span> | <span class="terminal">==</span>
 
   arithmetic_expression = term  { (<span class="terminal">+</span>|<span class="terminal">-</span>) term}
-  term       = factor  { (<span class="terminal">*</span>|<span class="terminal">/</span>) factor}
-  factor     = constant | variable | <span class="terminal">(</span>  expression  <span class="terminal">)</span>
-  variable   = mobius_variable, e.g. <a href="#mode">mode</a>.
-  constant   = numeric integer or float constant.
+  term                  = factor  { (<span class="terminal">*</span>|<span class="terminal">/</span>) factor}
+  factor                = constant | variable | <span class="terminal">(</span>  arithmetic_expression <span class="terminal">)</span>
+  variable              = mobius_variable, e.g. <a href="#mode">mode</a>
+  constant              = numeric integer or float constant
 
 </pre>
 (see Jeff Laron's <a href="https://groups.yahoo.com/neo/groups/zonemobius/conversations/messages/3442">post</a>)
