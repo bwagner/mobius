@@ -1,5 +1,5 @@
 The so-called Magic Button concept was one described by rockatron99889 here
-http://tech.groups.yahoo.com/group/zonemobius/message/8251 .
+https://groups.yahoo.com/neo/groups/zonemobius/conversations/topics/8251 .
 
 As I understood it the basic concept is that we want the ability to trigger a
 series of buttons bound to functions (like Overdub, HalfSpeed etc.) and,
