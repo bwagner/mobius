@@ -1,0 +1,30 @@
+!name Record And Signal
+
+# Mobius-Script
+# behaves like built-in Record but sends signal on events:
+#   - start recording
+#   - stop recording
+#   - delete
+#
+# see https://bwagner.github.io/mobius/circularlabs_root/doc/v2/scripts.htm
+#
+# Author: Bernhard Wagner
+# Fri Nov 30 15:43:32 CET 2018
+
+# default is 250 msec, raise it to 500 msec
+!sustain 500
+  if mode = reset || mode = play
+    Record
+    MidiOut control 15 127 70
+  else
+    Play
+    MidiOut control 15 126 70
+  endif
+end
+
+label sustain
+  if sustainCount = 1
+    Reset
+    MidiOut control 15 125 70
+  endif
+end
