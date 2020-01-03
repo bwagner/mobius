@@ -1,0 +1,5 @@
+!name Shuffle This
+Message Shuffle This
+Wait cycle
+Shuffle subcycles 1,r,3,r,r,r
+end

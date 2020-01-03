@@ -1,0 +1,7 @@
+!name trim subcycle
+
+variable lastslice subcyclecount 
+variable trimslice lastslice -1
+wait until subcycle trimslice
+Trimend
+set 8thsPerCycle 8thsPerCycle - 1

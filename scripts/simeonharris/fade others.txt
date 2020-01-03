@@ -1,0 +1,47 @@
+!name Fade Out Others
+
+# This variable determines the duration of the fade
+# There are 128 steps, this is the number of milliseconds between
+# each, so 10 will require 1280 milliseconds or about 1.2 seconds
+
+Variable fadeRate 20
+
+# remember the currently selected track
+Variable selectedTrack track
+
+# Determine which direction we're going
+# find the first non-active track, if it is at level zero
+# we fade up, otherwise fade down
+Variable direction -1
+if track == 1
+   for 2
+     if output == 0
+        set direction 1
+     endif
+   next
+else
+   for 1
+     if output == 0
+        set direction 1
+     endif
+  next
+endif
+
+# loop until all tracks have faded
+Variable stillFading 8
+
+while stillFading > 0
+
+  set stillFading 0
+
+  for *
+    if track != selectedTrack
+       set output output + direction
+       if output > 0 && output < 127
+          set stillFading stillFading + 1
+       endif
+    endif
+  next
+
+  Wait msec fadeRate
+next

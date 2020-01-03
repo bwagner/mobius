@@ -1,0 +1,28 @@
+!name autreverse overdub
+variable save8ths 8thspercycle
+set 8thspercycle = 4
+
+variable looplength (8thspercycle / 2) * cyclecount
+
+wait cycle
+
+overdub
+wait last
+
+repeat looplength 
+
+slipforward
+Wait last
+reverse
+Wait last
+wait subcycle
+reverse
+Wait last
+slipforward
+Wait last
+wait subcycle
+next
+overdub 
+
+set 8thspercycle save8ths
+

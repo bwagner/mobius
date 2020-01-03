@@ -1,0 +1,19 @@
+!name multi record button
+
+if mode = reset
+record
+endif
+
+if mode = record
+overdub
+endif
+
+if mode = play
+overdub
+endif
+
+if mode = overdub
+play
+endif
+
+end 

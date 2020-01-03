@@ -1,0 +1,4 @@
+!name Random Shuffle
+Variable slices subcyclecount * cyclecount
+Wait cycle
+Shuffle slices u

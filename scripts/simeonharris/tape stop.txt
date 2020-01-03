@@ -1,0 +1,16 @@
+!name tape stop
+
+set quantize off
+
+variable interval 40
+
+repeat 44
+ratedown
+wait msec interval
+next
+
+pause
+
+ratenormal
+
+set quantize subcycle

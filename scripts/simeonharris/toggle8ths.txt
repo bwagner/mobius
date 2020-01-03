@@ -1,0 +1,7 @@
+!name toggle 8ths
+
+if 8thspercycle = 16
+set 8thspercycle = 12
+else 
+set 8thspercycle = 16
+endif
