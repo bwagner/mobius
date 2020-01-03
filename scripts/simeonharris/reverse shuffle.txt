@@ -1,0 +1,4 @@
+!name Reverse Shuffle
+variable slices subcyclecount * cyclecount
+Wait cycle
+Shuffle slices

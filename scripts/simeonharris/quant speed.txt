@@ -1,0 +1,5 @@
+!name quant speed
+
+wait cycle
+
+speed

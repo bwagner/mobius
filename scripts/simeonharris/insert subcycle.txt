@@ -1,0 +1,9 @@
+!name Insert SubCycle
+Variable saveQuantize quantize
+set quantize off
+Wait subCycle
+Insert
+Wait subCycle
+Record
+set 8thsPerCycle 8thsPerCycle + 1
+set quantize saveQuantize

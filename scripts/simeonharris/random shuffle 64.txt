@@ -1,0 +1,3 @@
+!name Random Shuffle 64
+Wait cycle
+Shuffle 64 u

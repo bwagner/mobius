@@ -1,0 +1,11 @@
+!name Sequenced Alternate substitute
+
+set 8thsPerCycle 16
+wait cycle
+repeat 8
+substitute
+wait subcycle
+substitute
+wait subcycle
+next
+

@@ -1,0 +1,47 @@
+!name Bass Grid
+
+
+Wait cycle 
+variable eighths 8thspercycle
+
+set 8thspercycle 16
+
+
+rateshift 12
+Overdub 
+wait subcycle
+overdub
+rateshift 0
+
+wait subcycle
+wait subcycle
+wait subcycle
+
+rateshift 12
+Overdub 
+wait subcycle
+overdub
+rateshift 0
+
+wait subcycle
+wait subcycle
+wait subcycle
+wait subcycle
+wait subcycle
+
+rateshift 12
+Overdub 
+wait subcycle
+overdub
+rateshift 0
+
+wait subcycle
+rateshift -15
+wait subcycle
+rateshift 0
+wait subcycle
+wait subcycle
+wait subcycle
+
+set 8thspercycle eighths
+

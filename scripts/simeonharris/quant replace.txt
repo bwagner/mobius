@@ -1,0 +1,9 @@
+!name quant replace
+
+set 8thsPerCycle 16
+
+wait subcycle
+replace
+wait subcycle
+play
+

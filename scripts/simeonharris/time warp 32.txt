@@ -1,0 +1,46 @@
+# Per Boysen
+
+#
+
+# Time Warp 32
+
+#
+
+# This scipt jumps between HalfSpeed and NormalSpeed while staying in Overdub
+
+# Mode. The pitch is transposed one octave so whatever you play will end up -
+
+# kind of - musical to the already looped audio. I also have a "Time Warp 6"
+
+# scipt that is similar but goes a bit slower - gives a different groove to the
+
+# texture. The effect of these Time Warp scipts does also differ depending on
+
+# which speed/rate you are in when you execute the script.
+
+
+
+
+!name Time Warp By 32
+
+!focuslock
+
+Variable save8thsPerCycle $8thsPerCycle
+
+set 8thsPerCycle 32
+
+wait cycle
+
+Overdub
+
+repeat 32
+
+Speed
+
+Wait subcycles 1
+
+next
+
+Overdub
+
+set 8thsPerCycle 16 $save8thsPerCycle

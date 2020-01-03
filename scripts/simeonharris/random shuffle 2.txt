@@ -1,0 +1,4 @@
+!name Random Shuffle 2
+Wait cycle
+Shuffle subcycles r,u 
+end

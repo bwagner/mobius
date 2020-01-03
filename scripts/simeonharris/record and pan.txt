@@ -1,0 +1,22 @@
+!name record and pan 4
+
+Track5
+
+set pan 0
+
+Track6
+
+set pan 35
+
+Track7
+
+set pan 90
+
+Track8
+
+set pan 127
+
+Track5
+
+
+

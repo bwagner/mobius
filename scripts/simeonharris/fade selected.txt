@@ -1,0 +1,17 @@
+!name Fade In Or Out
+Message Fade In Or Out
+
+Variable track lastLevel
+
+if output = 0
+while output < lastLevel
+set output output + 1
+Wait msec 500
+next
+else
+set lastLevel output
+while output > 0
+set output output - 1
+Wait msec 100
+next
+endif

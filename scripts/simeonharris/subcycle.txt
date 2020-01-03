@@ -1,0 +1,32 @@
+!name Subcycle Sequence
+
+# Variable containing the current 'slice' in the sequence
+Variable global currentSlice -1
+
+# The number of slices will be the number of subcycles times cycles
+# so the resulting slice will be equal to one subcycle
+Variable slices subCycleCount * cycleCount
+
+if currentSlice == -1
+  # first time here, make a shuffle pattern with
+  # the current subcycle
+  set currentSlice subCycleNumber + (subCycleCount * cycleNumber)
+
+else
+  # we've already done the shuffle, undo back to the original layer
+  Undo
+
+  # calculate the next slice
+  set currentSlice currentSlice + 1
+  if currentSlice >= slices
+     # wrap around to the beginning
+     set currentSlice 0
+  endif
+endif
+
+# internally subcycles/slices are numbered from 0
+# but the Shuffle command wants them numbered from 1
+Variable shuffleSlice currentSlice + 1
+
+Message Shuffling $shuffleSlice slice out of $slices
+Shuffle slices shuffleSlice

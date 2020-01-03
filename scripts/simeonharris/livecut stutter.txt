@@ -1,0 +1,30 @@
+!name livecut stutter
+
+# Variable containing 'slice'
+Variable global Slicetarget
+
+Variable saveQuantize quantize
+variable eighths 8thspercycle
+set 8thspercycle 32
+
+# The number of slices will be the number of subcycles times cycles
+# so the resulting slice will be equal to one subcycle
+Variable slices subCycleCount * cycleCount
+
+
+  # calculate the slice
+  set slicetarget slices - 8
+  
+# internally subcycles/slices are numbered from 0
+# but the Shuffle command wants them numbered from 1
+Variable shuffleSlice slicetarget + 1
+
+wait until subcycle slicetarget
+
+Shuffle slices shuffleSlice
+
+wait until subcycle 0
+
+undo
+set quantize saveQuantize
+set 8thspercycle eighths

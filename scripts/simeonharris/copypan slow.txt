@@ -1,0 +1,14 @@
+!name copypan slow
+set switchquantize off
+set emptytrackaction copy
+set pan 30
+NextTrack
+instantmultiply2
+set 8thspercycle 8
+set pan 97
+variable lastslice subcyclecount * 2
+variable trimslice lastslice -1
+wait until subcycle trimslice
+Trimend
+PrevTrack
+set emptytrackaction none 

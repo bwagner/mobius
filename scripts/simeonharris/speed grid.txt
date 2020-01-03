@@ -1,0 +1,14 @@
+!name Speed Grid
+
+#you must set Rate Sequence at Configuration Presets Effects
+
+Wait cycle #can be deleted to kick in the script on the next Quantize cusp
+variable eighths 8thspercycle
+Overdub #can be deleted for a playback only functionality
+repeat eighths
+RateNext
+Wait subcycle
+Next
+Overdub
+RateNormal
+Next

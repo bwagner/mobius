@@ -1,0 +1,3 @@
+!name rate -12
+Wait cycle
+Rateshift -12

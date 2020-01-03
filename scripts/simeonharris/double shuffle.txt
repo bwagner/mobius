@@ -1,0 +1,13 @@
+!name double shuffle
+set switchquantize off
+set emptytrackaction copy
+set pan 0
+NextTrack
+instantmultiply2
+set pan 127
+Wait cycle
+Shuffle subcycles 1,r,3,r,r,r
+PrevTrack
+Wait cycle
+Shuffle subcycles 1,r,3,r,r,r
+set emptytrackaction none 
