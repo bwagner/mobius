@@ -1,7 +1,7 @@
-# present001
-#
 # Boss-Rec-Play-Overdub
-#
+# Emulation of a Boss-RC 505
+# Two touches make a overdub from record mode
+
 !name Boss-Rec-Play-Overdub
 
 !multiclick 500

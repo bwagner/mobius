@@ -1,7 +1,7 @@
   
-# fourstringri0t
+# Variation of fourstringri0t script
 #
-# Emulation of the Line 6 DL4 Play/Stop button
+# Emulation of the Line 6 DL4 Play/Stop button in the fourth track
 
 !name Play/Stop4
 set muteMode continue
