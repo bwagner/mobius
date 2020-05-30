@@ -1,0 +1,8 @@
+
+!name PlayMC
+!focuslock
+set muteMode continue
+
+if mode==mute
+Mute
+endif

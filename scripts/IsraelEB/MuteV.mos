@@ -1,0 +1,20 @@
+  
+# fourstringri0t
+#
+# Emulation of the Line 6 DL4 Play/Stop button
+
+!name MuteV
+
+!focuslock
+
+
+set muteMode start
+
+if mode==mute
+
+end
+else
+Mute
+endif
+
+set muteMode continue

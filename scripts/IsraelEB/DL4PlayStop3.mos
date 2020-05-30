@@ -1,0 +1,19 @@
+  
+# fourstringri0t
+#
+# Emulation of the Line 6 DL4 Play/Stop button
+
+!name Play/Stop3
+set muteMode continue
+
+Track 3
+
+if mode == play
+Mute
+end
+else if mode == mute
+Mute
+end
+else
+Play
+endif

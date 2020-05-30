@@ -1,0 +1,30 @@
+!name dropstop
+!focuslock
+# Variable containing 'slice'
+Variable global Slicetarget
+
+Variable saveQuantize quantize
+variable eighths 8thspercycle
+set 8thspercycle 32
+
+# The number of slices will be the number of subcycles times cycles
+# so the resulting slice will be equal to one subcycle
+Variable slices subCycleCount * cycleCount
+
+
+  # calculate the slice
+  set slicetarget slices - 8
+  
+
+wait until subcycle slicetarget
+
+repeat 40
+ratedown
+wait subcycle
+next
+
+
+set quantize saveQuantize
+set 8thspercycle eighths
+pause
+ratenormal
