@@ -1,0 +1,11 @@
+
+!name PlayMS
+!focuslock
+set muteMode start
+
+
+if mode==mute
+Mute
+endif
+
+set muteMode continue

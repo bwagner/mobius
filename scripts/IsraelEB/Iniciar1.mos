@@ -1,0 +1,24 @@
+!name Iniciar
+
+set muteMode start
+
+variable t track
+variable i 0
+
+while i<=8
+
+Track i
+if mode==mute
+Mute
+Mute
+endif
+
+if i=t
+Mute
+endif
+
+
+variable i i+1
+
+next
+

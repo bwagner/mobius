@@ -1,0 +1,8 @@
+
+
+!name PreviousLoopQ
+!focuslock
+
+set switchQuant cycle
+PrevLoop
+set switchQuant off

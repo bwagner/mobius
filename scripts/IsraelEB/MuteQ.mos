@@ -1,0 +1,33 @@
+  
+# fourstringri0t
+#
+# Emulation of the Line 6 DL4 Play/Stop button
+
+!name MuteQ
+
+!focuslock
+!quantize
+!switchQuantize
+
+
+set muteMode start
+
+
+set switchQuant cycle
+set quantize cycle
+
+
+
+if mode==mute
+
+end
+else
+Mute
+endif
+
+
+
+set switchQuant off
+set quantize off
+
+set muteMode continue
