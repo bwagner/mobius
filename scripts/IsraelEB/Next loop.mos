@@ -1,4 +1,5 @@
-
+# Moves quiantized to the next loop 
+# Can be used with Focus Lock
 
 !name NextLoopQ
 !focuslock

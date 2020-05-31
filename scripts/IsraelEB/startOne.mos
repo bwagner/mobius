@@ -1,4 +1,6 @@
-!name Iniciar
+# If all the tracks are muted, only start the selected track but, all the tracks are synchronized
+
+!name StartOne
 
 set muteMode start
 

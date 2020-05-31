@@ -1,7 +1,6 @@
   
-# fourstringri0t
-#
-# Emulation of the Line 6 DL4 Play/Stop button
+# Make a quantized mute in the track
+# Can be used with Focus Lock
 
 !name MuteQ
 
