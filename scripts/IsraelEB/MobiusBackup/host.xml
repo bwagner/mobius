@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<HostConfigs>
+  <HostConfig product='Usine' ppqPosTransport='true'/>
+  <HostConfig product='Cubase' rewindsOnResume='true'/>
+  <HostConfig product='com.apple.logic.pro' rewindsOnResume='true'/>
+</HostConfigs>
