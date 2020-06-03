@@ -1,0 +1,32 @@
+#Move all the Tracks to the Loop 4
+
+!name Allloop4
+
+variable t track
+
+Track 1
+set switchQuant loop
+loop 4
+set switchQuant off
+Track 2
+set switchQuant loop
+loop 4
+set switchQuant off
+Track 3
+set switchQuant loop
+loop 4
+set switchQuant off
+Track 4
+set switchQuant loop
+loop 4
+set switchQuant off
+Track 5
+set switchQuant loop
+loop 4
+set switchQuant off
+Track 6
+set switchQuant loop
+loop 4
+set switchQuant off
+
+Track t

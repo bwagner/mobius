@@ -1,0 +1,19 @@
+  
+# Make a unquantized mute in the track
+# Can be used with Focus Lock
+
+!name MuteV
+
+!focuslock
+
+
+set muteMode start
+
+if mode==mute
+
+end
+else
+Mute
+endif
+
+set muteMode continue

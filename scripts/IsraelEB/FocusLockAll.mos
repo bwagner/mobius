@@ -1,0 +1,24 @@
+#Make a Focus Lock on all the 8 Tracks
+
+!name FocusLockAll
+
+variable t track
+
+Track1
+FocusLock
+Track2
+FocusLock
+Track3
+FocusLock
+Track4
+FocusLock
+Track5
+FocusLock
+Track6
+FocusLock
+Track7
+FocusLock
+Track8
+FocusLock
+
+Track t

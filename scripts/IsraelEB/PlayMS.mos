@@ -1,0 +1,14 @@
+#Play a Track in start mode
+# I use this for restart a track when it is muted
+# Can be used with Focus Lock
+
+!name PlayMS
+!focuslock
+set muteMode start
+
+
+if mode==mute
+Mute
+endif
+
+set muteMode continue

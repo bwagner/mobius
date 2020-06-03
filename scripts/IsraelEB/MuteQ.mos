@@ -1,0 +1,32 @@
+  
+# Make a quantized mute in the track
+# Can be used with Focus Lock
+
+!name MuteQ
+
+!focuslock
+!quantize
+!switchQuantize
+
+
+set muteMode start
+
+
+set switchQuant cycle
+set quantize cycle
+
+
+
+if mode==mute
+
+end
+else
+Mute
+endif
+
+
+
+set switchQuant off
+set quantize off
+
+set muteMode continue

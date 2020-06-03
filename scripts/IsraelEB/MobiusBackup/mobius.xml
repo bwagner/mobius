@@ -1,0 +1,303 @@
+<?xml version="1.0"?>
+
+<MobiusConfig setup="Default" sampleRate="44100" oscOutputPort="0" oscInputPort="0" dualPluginWindow="true" midiRecordMode="average" driftCheckPoint="loop" traceDebugLevel="2" tracePrintLevel="1" spreadRange="48" pluginPins="16" monitorAudio="true" longPress="500" maxLoops="4" trackGroups="2" tracks="8" maxSyncDrift="2048" outputLatency="0" inputLatency="0" suggestedLatencyMsec="0" noiseFloor="13" quickSave="mobiusloop">
+
+
+<ScriptConfig>
+
+<ScripRef file="D:\israk\israk\OneDrive\Documentos\Music\Ableton\Mobius\Scripts"/>
+
+</ScriptConfig>
+
+<Preset windowSlideUnit="loop" windowSlideAmount="1" windowEdgeUnit="subcycle" windowEdgeAmount="1" trackLeaveAction="cancel" timeCopyMode="insert" switchVelocity="false" switchQuantize="off" switchLocation="restore" switchDuration="permanent" subcycles="4" soundCopyMode="multiply" slipTime="0" slipMode="subCycle" shuffleMode="reverse" roundingOverdub="true" reverseTransfer="follow" returnLocation="restore" recordTransfer="follow" recordThreshold="0" recordResetsFeedback="false" timeStretchRange="12" speedTransfer="follow" speedStepRange="24" speedShiftRestart="false" speedSequence="5 12 0" speedRecord="false" speedBendRange="12" quantize="off" pitchTransfer="follow" pitchStepRange="24" pitchShiftRestart="false" pitchSequence="5 12 0" pitchBendRange="12" overdubTransfer="follow" overdubQuantized="false" noLayerFlattening="false" noFeedbackUndo="false" muteMode="continue" muteCancel="edit" multiplyMode="normal" maxUndo="0" maxRedo="1" loopCount="4" emptyTrackAction="none" emptyLoopAction="none" bounceQuantize="loop" autoRecordTempo="120" autoRecordBars="1" altFeedbackEnable="false" name="Default"/>
+
+
+<Setup name="Default" speedSyncAdjust="none" slaveSyncUnit="beat" resizeSyncAdjust="none" realignTime="start" outRealign="restart" muteSyncMode="transport" minTempo="20" maxTempo="300" manualStart="false" defaultTrackSyncUnit="loop" defaultSyncSource="track" beatsPerBar="4" active="0">
+
+<SetupTrack syncSource="default" trackSyncUnit="default" pluginOutputPort="0" pluginInputPort="0" pan="64" output="127" mono="false" input="127" group="0" focus="false" feedback="127" audioOutputPort="0" audioInputPort="0" altFeedback="127"/>
+
+<SetupTrack syncSource="default" trackSyncUnit="default" pluginOutputPort="0" pluginInputPort="0" pan="64" output="127" mono="false" input="127" group="0" focus="false" feedback="127" audioOutputPort="0" audioInputPort="0" altFeedback="127"/>
+
+<SetupTrack syncSource="default" trackSyncUnit="default" pluginOutputPort="0" pluginInputPort="0" pan="64" output="127" mono="false" input="127" group="0" focus="false" feedback="127" audioOutputPort="0" audioInputPort="0" altFeedback="127"/>
+
+<SetupTrack syncSource="default" trackSyncUnit="default" pluginOutputPort="0" pluginInputPort="0" pan="64" output="127" mono="false" input="127" group="0" focus="false" feedback="127" audioOutputPort="0" audioInputPort="0" altFeedback="127"/>
+
+<SetupTrack syncSource="default" trackSyncUnit="default" pluginOutputPort="0" pluginInputPort="0" pan="64" output="127" mono="false" input="127" group="0" focus="false" feedback="127" audioOutputPort="0" audioInputPort="0" altFeedback="127"/>
+
+<SetupTrack syncSource="default" trackSyncUnit="default" pluginOutputPort="0" pluginInputPort="0" pan="64" output="127" mono="false" input="127" group="0" focus="false" feedback="127" audioOutputPort="0" audioInputPort="0" altFeedback="127"/>
+
+<SetupTrack syncSource="default" trackSyncUnit="default" pluginOutputPort="0" pluginInputPort="0" pan="64" output="127" mono="false" input="127" group="0" focus="false" feedback="127" audioOutputPort="0" audioInputPort="0" altFeedback="127"/>
+
+<SetupTrack syncSource="default" trackSyncUnit="default" pluginOutputPort="0" pluginInputPort="0" pan="64" output="127" mono="false" input="127" group="0" focus="false" feedback="127" audioOutputPort="0" audioInputPort="0" altFeedback="127"/>
+
+</Setup>
+
+
+<BindingConfig name="Common Bindings">
+
+<Binding name="Record" channel="0" value="0" trigger="note" target="function"/>
+
+<Binding name="Overdub" channel="0" value="1" trigger="note" target="function"/>
+
+<Binding name="Multiply" channel="0" value="2" trigger="note" target="function"/>
+
+<Binding name="Insert" channel="0" value="3" trigger="note" target="function"/>
+
+<Binding name="Replace" channel="0" value="4" trigger="note" target="function"/>
+
+<Binding name="Undo" channel="0" value="5" trigger="note" target="function"/>
+
+<Binding name="Mute" channel="0" value="6" trigger="note" target="function"/>
+
+<Binding name="Reverse" channel="0" value="7" trigger="note" target="function"/>
+
+<Binding name="Speed" channel="0" value="8" trigger="note" target="function"/>
+
+<Binding name="NextLoop" channel="0" value="9" trigger="note" target="function"/>
+
+<Binding name="LoopTrigger1" channel="0" value="48" trigger="note" target="function"/>
+
+<Binding name="LoopTrigger2" channel="0" value="50" trigger="note" target="function"/>
+
+<Binding name="LoopTrigger3" channel="0" value="52" trigger="note" target="function"/>
+
+<Binding name="LoopTrigger4" channel="0" value="53" trigger="note" target="function"/>
+
+<Binding name="LoopTrigger5" channel="0" value="55" trigger="note" target="function"/>
+
+<Binding name="LoopTrigger6" channel="0" value="57" trigger="note" target="function"/>
+
+<Binding name="LoopTrigger7" channel="0" value="59" trigger="note" target="function"/>
+
+<Binding name="LoopTrigger8" channel="0" value="60" trigger="note" target="function"/>
+
+<Binding name="input" value="0" trigger="host" target="parameter"/>
+
+<Binding name="output" value="1" trigger="host" target="parameter"/>
+
+<Binding name="feedback" value="2" trigger="host" target="parameter"/>
+
+<Binding name="altFeedback" value="3" trigger="host" target="parameter"/>
+
+<Binding name="pan" value="4" trigger="host" target="parameter"/>
+
+<Binding name="selectedTrack" value="5" trigger="host" target="parameter"/>
+
+<Binding name="quantize" value="6" trigger="host" target="parameter"/>
+
+<Binding name="switchQuant" value="7" trigger="host" target="parameter"/>
+
+<Binding name="Solo1" value="65" trigger="key" target="function"/>
+
+<Binding name="Solo2" value="83" trigger="key" target="function"/>
+
+<Binding name="Solo3" value="68" trigger="key" target="function"/>
+
+<Binding name="Solo4" value="70" trigger="key" target="function"/>
+
+<Binding name="Solo5" value="71" trigger="key" target="function"/>
+
+<Binding name="Solo6" value="72" trigger="key" target="function"/>
+
+<Binding name="Solo7" value="74" trigger="key" target="function"/>
+
+<Binding name="Solo8" value="75" trigger="key" target="function"/>
+
+<Binding name="Play/Stop1" value="81" trigger="key" target="function"/>
+
+<Binding name="Play/Stop2" value="87" trigger="key" target="function"/>
+
+<Binding name="Play/Stop3" value="69" trigger="key" target="function"/>
+
+<Binding name="Play/Stop4" value="82" trigger="key" target="function"/>
+
+<Binding name="Play/Stop5" value="84" trigger="key" target="function"/>
+
+<Binding name="Play/Stop6" value="89" trigger="key" target="function"/>
+
+<Binding name="Play/Stop7" value="85" trigger="key" target="function"/>
+
+<Binding name="Play/Stop8" value="73" trigger="key" target="function"/>
+
+<Binding name="NextTrack" value="39" trigger="key" target="function"/>
+
+<Binding name="PrevTrack" value="37" trigger="key" target="function"/>
+
+<Binding name="NextLoopQ" value="40" trigger="key" target="function"/>
+
+<Binding name="PreviousLoopQ" value="38" trigger="key" target="function"/>
+
+<Binding name="MuteQ" value="77" trigger="key" target="function"/>
+
+<Binding name="MuteV" value="78" trigger="key" target="function"/>
+
+<Binding name="FocusLockAll" value="220" trigger="key" target="function"/>
+
+<Binding name="FocusLock" value="9" trigger="key" target="function"/>
+
+<Binding name="Allloop1" value="57" trigger="key" target="function"/>
+
+<Binding name="Allloop2" value="79" trigger="key" target="function"/>
+
+<Binding name="Allloop3" value="76" trigger="key" target="function"/>
+
+<Binding name="Allloop4" value="190" trigger="key" target="function"/>
+
+<Binding name="Boss-Rec-Play-Overdub" value="32" trigger="key" target="function"/>
+
+<Binding name="PlayMC" value="219" trigger="key" target="function"/>
+
+<Binding name="PlayMS" value="221" trigger="key" target="function"/>
+
+<Binding name="Reset" value="46" trigger="key" target="function"/>
+
+<Binding name="Record" value="90" trigger="key" target="function"/>
+
+<Binding name="Undo" value="602" trigger="key" target="function"/>
+
+<Binding name="Pause" value="88" trigger="key" target="function"/>
+
+</BindingConfig>
+
+
+<FocusLockFunctions>
+
+<String>AutoRecord</String>
+
+<String>Backward</String>
+
+<String>Checkpoint</String>
+
+<String>Clear</String>
+
+<String>Drift</String>
+
+<String>Forward</String>
+
+<String>Insert</String>
+
+<String>Divide</String>
+
+<String>Divide3</String>
+
+<String>Divide4</String>
+
+<String>InstantMultiply</String>
+
+<String>InstantMultiply3</String>
+
+<String>InstantMultiply4</String>
+
+<String>LongUndo</String>
+
+<String>Loop</String>
+
+<String>Move</String>
+
+<String>Multiply</String>
+
+<String>Mute</String>
+
+<String>MuteOff</String>
+
+<String>MuteOn</String>
+
+<String>MuteRealign</String>
+
+<String>NextLoop</String>
+
+<String>Overdub</String>
+
+<String>OverdubOff</String>
+
+<String>OverdubOn</String>
+
+<String>Pause</String>
+
+<String>PitchDown</String>
+
+<String>PitchNext</String>
+
+<String>PitchPrev</String>
+
+<String>PitchUp</String>
+
+<String>Play</String>
+
+<String>PrevLoop</String>
+
+<String>Realign</String>
+
+<String>Record</String>
+
+<String>Redo</String>
+
+<String>Rehearse</String>
+
+<String>Replace</String>
+
+<String>Reset</String>
+
+<String>Restart</String>
+
+<String>Reverse</String>
+
+<String>ShortUndo</String>
+
+<String>Shuffle</String>
+
+<String>Slip</String>
+
+<String>SlipBackward</String>
+
+<String>SlipForward</String>
+
+<String>Solo</String>
+
+<String>StartPoint</String>
+
+<String>Stutter</String>
+
+<String>Substitute</String>
+
+<String>SUSInsert</String>
+
+<String>SUSMultiply</String>
+
+<String>SUSMute</String>
+
+<String>SUSMuteRestart</String>
+
+<String>SUSNextLoop</String>
+
+<String>SUSOverdub</String>
+
+<String>SUSPrevLoop</String>
+
+<String>SUSRecord</String>
+
+<String>SUSReplace</String>
+
+<String>SUSReverse</String>
+
+<String>SUSStutter</String>
+
+<String>SUSSubstitute</String>
+
+<String>SUSUnroundedInsert</String>
+
+<String>SUSUnroundedMultiply</String>
+
+<String>TrackReset</String>
+
+<String>TrimEnd</String>
+
+<String>TrimStart</String>
+
+<String>Undo</String>
+
+<String>UndoOnly</String>
+
+</FocusLockFunctions>
+
+</MobiusConfig>

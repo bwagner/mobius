@@ -1,0 +1,10 @@
+# Play a track in a Continue Mode 
+# Can be used with Focus Lock
+
+!name PlayMC
+!focuslock
+set muteMode continue
+
+if mode==mute
+Mute
+endif

@@ -1,0 +1,26 @@
+# If all the tracks are muted, only start the selected track but, all the tracks are synchronized
+
+!name StartOne
+
+set muteMode start
+
+variable t track
+variable i 0
+
+while i<=8
+
+Track i
+if mode==mute
+Mute
+Mute
+endif
+
+if i=t
+Mute
+endif
+
+
+variable i i+1
+
+next
+

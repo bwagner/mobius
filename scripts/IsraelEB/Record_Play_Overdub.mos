@@ -1,0 +1,33 @@
+# Boss-Rec-Play-Overdub
+# Emulation of a Boss-RC 505
+# Two touches make a overdub from record mode
+
+!name Boss-Rec-Play-Overdub
+
+!multiclick 500
+
+if mode == reset
+Record
+end
+
+else if mode == mute
+Reset
+Record
+end
+
+else if mode == record
+Play
+end
+
+else if mode == play
+Overdub
+end
+
+else if mode != reset
+Overdub
+end
+endif
+
+label click
+Overdub
+end
