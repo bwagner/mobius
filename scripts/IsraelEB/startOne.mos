@@ -2,25 +2,24 @@
 
 !name StartOne
 
-set muteMode start
-
 variable t track
-variable i 0
+variable i 1
 
 while i<=8
+    
+    Track i
+    
+    set muteMode start
+    
+    Restart
 
-Track i
-if mode==mute
-Mute
-Mute
-endif
-
-if i=t
-Mute
-endif
+    if i=t
+        MuteOff
+    endif
 
 
-variable i i+1
+    variable i i+1
 
 next
 
+Track t

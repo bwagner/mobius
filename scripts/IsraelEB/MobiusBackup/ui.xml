@@ -1,0 +1,182 @@
+<?xml version="1.0"?>
+
+<UIConfig messageDuration="2" refreshInterval="100" height="665" width="1026" y="93" x="137">
+
+
+<Locations>
+
+<Location y="146" x="406" name="AudioMeter"/>
+
+<Location y="138" x="632" name="Mode"/>
+
+<Location y="162" x="396" name="LoopMeter"/>
+
+<Location y="97" x="395" name="Counter"/>
+
+<Location y="164" x="632" name="Beaters"/>
+
+<Location disabled="true" y="72" x="852" name="LoopBars"/>
+
+<Location y="8" x="4" name="LayerBars"/>
+
+<Location y="47" x="124" name="Parameters"/>
+
+<Location y="72" x="395" name="MinorModes"/>
+
+<Location y="47" x="394" name="SyncStatus"/>
+
+<Location y="46" x="4" name="TrackStrip"/>
+
+<Location y="295" x="398" name="Messages"/>
+
+<Location disabled="true" y="46" x="899" name="TrackStrip2"/>
+
+<Location y="190" x="632" name="LoopWindow"/>
+
+</Locations>
+
+
+<InstantParameters>
+
+<Parameter name="preset"/>
+
+<Parameter name="subcycles"/>
+
+<Parameter name="quantize"/>
+
+<Parameter name="switchQuantize"/>
+
+<Parameter name="emptyLoopAction"/>
+
+<Parameter name="defaultSyncSource"/>
+
+</InstantParameters>
+
+
+<FloatingTrackStrip>
+
+<Component name="input"/>
+
+<Component name="output"/>
+
+<Component name="feedback"/>
+
+<Component name="altFeedback"/>
+
+<Component name="pan"/>
+
+</FloatingTrackStrip>
+
+
+<FloatingTrackStrip2>
+
+<Component name="speedOctave"/>
+
+<Component name="speedStep"/>
+
+<Component name="speedBend"/>
+
+<Component name="timeStretch"/>
+
+</FloatingTrackStrip2>
+
+
+<DockedTrackStrip>
+
+<Component name="number"/>
+
+<Component name="loopRadar"/>
+
+<Component name="loopStatus"/>
+
+<Component name="output"/>
+
+<Component name="outputMeter"/>
+
+</DockedTrackStrip>
+
+
+<Palette>
+
+<PaletteColor name="background" rgb="0" key="600"/>
+
+<PaletteColor name="button" rgb="16744576" key="601"/>
+
+<PaletteColor name="buttonText" rgb="16777215" key="602"/>
+
+<PaletteColor name="bar" rgb="32896" key="603"/>
+
+<PaletteColor name="activeBar" rgb="65535" key="604"/>
+
+<PaletteColor name="meter" rgb="45056" key="605"/>
+
+<PaletteColor name="slowMeter" rgb="12632256" key="606"/>
+
+<PaletteColor name="recordingMeter" rgb="7605236" key="607"/>
+
+<PaletteColor name="muteMeter" rgb="16711680" key="614"/>
+
+<PaletteColor name="event" rgb="16777215" key="608"/>
+
+<PaletteColor name="alertBackground" rgb="12615680" key="609"/>
+
+<PaletteColor name="alertText" rgb="16777088" key="610"/>
+
+<PaletteColor name="blink" rgb="8421631" key="611"/>
+
+<PaletteColor name="paramName" rgb="6185314" key="612"/>
+
+<PaletteColor name="paramValue" rgb="65535" key="613"/>
+
+<PaletteColor name="group1" rgb="33023" key="615"/>
+
+<PaletteColor name="group2" rgb="8388863" key="616"/>
+
+<PaletteColor name="group3" rgb="16776960" key="617"/>
+
+<PaletteColor name="group4" rgb="65535" key="618"/>
+
+<PaletteColor name="checkpointBar" rgb="16777215" key="619"/>
+
+<PaletteColor name="tickCycle" rgb="16777215" key="620"/>
+
+<PaletteColor name="tickSubcycle" rgb="16777215" key="621"/>
+
+<PaletteColor name="tickCue" rgb="16777215" key="622"/>
+
+<PaletteColor name="window" rgb="16777215" key="623"/>
+
+</Palette>
+
+
+<FontConfig>
+
+<FontBinding name="mode" size="20"/>
+
+<FontBinding name="loopMeter" size="12"/>
+
+<FontBinding name="loopCounterSmall" size="30"/>
+
+<FontBinding name="loopCounterBig" size="40"/>
+
+<FontBinding name="layerList" size="8"/>
+
+<FontBinding name="message" size="18"/>
+
+<FontBinding name="minorModes" size="12"/>
+
+<FontBinding name="sync" size="12"/>
+
+<FontBinding name="button" size="14"/>
+
+<FontBinding name="parameter" size="14"/>
+
+<FontBinding name="knob" size="12"/>
+
+<FontBinding name="trackGroup" size="12" style="1"/>
+
+<FontBinding name="drag" size="10"/>
+
+</FontConfig>
+
+</UIConfig>
