@@ -1,0 +1,120 @@
+!name Drum Fills
+!autoload
+
+###### Drum Fills (script) Comments ######
+### How I use it: 
+# 1) Record x number of cycles worth of drums on any given track on Loop 1, be sure to bind this script to your designated drum Track
+# 2) Pressing first time will give you a quick 2-cycle measure to record a fill on Loop 2, automatically returns to Loop 1
+# 3) "   " for Loop 3
+# 4) "   " for Loop 4
+# 5) Any press after that will play the previously recorded "fills", lending variety to your live performances!
+### add as many loops as you'd like, just be ready to adjust the code accordingly
+### slipForward is used to "make up" for the lost time when a fill is executed and then restored upon returning to Loop 1
+### I couldn't find a way to queue a fill on the last cycle without issues, so it is passed for the time being
+
+###### Preset Settings
+### These are the ones that work best for me, but feel free to experiment
+# Empty Loop Action: None
+# Switch Location: Restore
+# Switch Duration: Permanent
+# Return Location: Restore
+
+###### Many thanks to Benjamin Ostarek in Mobius Facebook Group for the suggestions and helpfulness!
+
+#######Code###########
+
+set slipMode Cycle
+
+Variable global buttonPress 1
+Variable global lastLoop 0
+
+if buttonPress = 1
+ message Fill 1
+ set Quantize cycle
+ set switchQuant cycle
+  if cycleNumber = cycleCount - 1
+   message passed
+  endif
+ endif
+else
+if buttonPress = 1
+ if cycleNumber != cycleCount - 1
+  Loop 2
+   set trackSyncUnit cycle
+    Record
+     wait cycle
+    wait cycle
+  Loop 1
+ wait last
+slipForward
+set buttonPress buttonPress + 1
+endif
+end
+
+else
+if buttonPress = 2
+ message Fill 2
+  if cycleNumber = cycleCount - 1
+   message passed
+  endif
+ endif
+else
+if buttonPress = 2
+ if cycleNumber != cycleCount - 1
+  Loop 3
+   set trackSyncUnit cycle
+    Record
+     wait cycle
+    wait cycle
+   Loop 1
+  wait last
+slipForward
+set buttonPress buttonPress + 1
+endif
+end
+
+else
+if buttonPress = 3
+ message Fill 3
+ if cycleNumber = cycleCount - 1
+   message passed
+  endif
+ endif
+else
+if buttonPress = 3
+  if cycleNumber != cycleCount - 1
+   Loop 4
+    set trackSyncUnit cycle
+     Record
+      wait cycle
+     wait cycle
+    Loop 1
+  wait last
+slipForward
+set buttonPress buttonPress + 1
+set lastLoop 2
+endif
+end
+
+#######Playback Code#######
+
+else
+if lastLoop < 2
+ set lastLoop 2
+end
+
+else
+if lastLoop > 4
+ set lastLoop 2
+endif
+
+Loop lastLoop
+set trackSyncUnit cycle
+ wait cycle
+ wait cycle
+ Loop 1
+ wait last
+ slipForward
+set lastLoop lastLoop + 1
+
+#####################
